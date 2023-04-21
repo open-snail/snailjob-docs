@@ -132,7 +132,12 @@ module.exports = {
         },
         footer: { // 页脚信息
             createYear: 2022, // 博客创建年份
-            copyrightInfo: 'Team Aizudai | MIT GPL-3.0', // 博客版权信息，支持a标签
+            copyrightInfo: [
+                '<a href="http://aizuda.com/" target="_blank" style="font-weight:bold">Team Aizudai</a>',
+                ' | ',
+                '<a href="http://beian.miit.gov.cn/" target=_blank>皖ICP备16014822号</a>',
+                '</p>',
+            ].join('')
         },
         htmlModules,
     },
