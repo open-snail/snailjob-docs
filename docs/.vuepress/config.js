@@ -25,9 +25,9 @@ module.exports = {
             {text: '首页', link: '/'},
             {
                 text: '指南', link: '/pages/a2f161/', items: [
-                    {text: '项目初衷与诞生', link: '/pages/52d5c3/'},
-                    {text: '介绍', link: '/pages/a2f161/'},
-                    {text: '快速上手', link: '/pages/793dcb/'},
+                    {text: '01.介绍', link: '/pages/a2f161/'},
+                    {text: '02.快速上手', link: '/pages/793dcb/'},
+                    {text: '03.最佳实践', link: '/pages/52d5c3/'},
                     {
                         text: '核心功能', items: [
                             { text: '01.仪表盘', link: '/pages/960e25/' },
@@ -81,7 +81,7 @@ module.exports = {
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.png', // 导航栏logo
-        repo: 'https://gitee.com/aizuda/easy-retry.git', // 导航栏右侧生成Github链接
+        repo: 'https://github.com/aizuda/easy-retry.git', // 导航栏右侧生成Github链接
         searchMaxSuggestions: 10, // 搜索结果显示最大数
         lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
 
