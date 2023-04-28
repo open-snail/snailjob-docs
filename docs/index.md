@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/logo.png
+heroImage: /img/logo1.png
 heroText: Easy-Retry
 tagline: 🚀一款基于服务治理的重试组件
 actionText: 开始使用 →
