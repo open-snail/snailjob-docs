@@ -43,9 +43,7 @@ module.exports = {
                             { text: '01.客户端剖析', link: '/pages/7aeedd/' },
                             { text: '02.服务端剖析', link: '/pages/3bc7f3/' }
                         ]
-                    },
-
-                    // { text: '目录结构', link: '/pages/2f674a/' },
+                    }
                     // { text: '核心配置和约定', link: '/pages/33d574/' },
                     // { text: '自动生成front matter', link: '/pages/088c16/' },
                     // { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
@@ -63,6 +61,7 @@ module.exports = {
                     // }
                 ]
             },
+            { text: '更新日志', link: '/pages/bbdaf6/' },
             // {
             //     text: '配置', link: '/pages/a20ce8/', items: [
             //         {text: '主题配置', link: '/pages/a20ce8/'},
