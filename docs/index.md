@@ -164,6 +164,8 @@ postList: none
   </tbody>
 </table>
 
+## 友情链接
+* [杨不易呀](https://yby6.com/)
 
 <!-- AD -->
 <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
