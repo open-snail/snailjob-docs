@@ -1,3 +1,15 @@
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+
+export default ({
+    Vue,
+    options,
+    router,
+    siteData,
+  }) => {
+    Vue.use(Antd)
+}
+
 // /**
 //  * to主题使用者：你可以去掉本文件的所有代码
 //  */

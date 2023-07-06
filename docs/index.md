@@ -60,6 +60,9 @@ postList: none
   33. 优化配置同步逻辑 【**新增**】
   34. 添加初始化时指定数据库的逻辑【**新增**】[PR](https://gitee.com/aizuda/easy-retry/pulls/1)
 
+
+<Notice />
+
 # <div class="icon-img-container"><img src="/img/icon/gitlab.png" alt="图标" class="icon-image"> <div class="icon-text">代码托管</div> </div>
 
 <div class="git-icon-image">
