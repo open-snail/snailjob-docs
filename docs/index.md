@@ -2,8 +2,8 @@
 home: true
 heroImage: /img/logo1.png
 heroText: Easy-Retry
-tagline: 🚀一款基于服务治理的重试组件
-actionText: 开始使用 →
+tagline: 🚀基于Base思想实现的分布式服务重试重试组件
+actionText: ️v2.0全新发布 →
 actionLink: /pages/a2f161/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
@@ -23,126 +23,66 @@ features: # 可选的
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none
 ---
-<p align="center">
-  <a class="become-sponsor" href="/pages/793dcb/">支持这个项目</a>
-</p>
+# 🎉上新推荐
++ <span style="color:#11a8cd; font-weight:bold;">[v2.0 重磅更新](https://gitee.com/aizuda/easy-retry/releases "查看发行日志")</span>
+  1. 添加局部保存的提示 【**新增**】[PR](https://gitee.com/aizuda/easy-retry/pulls/7)
+  2. pod列表页新增消费组显示 【**新增**】
+  3. 优化IdempotentIdContext注释、手动生成幂等号改为IdempotentIdContext传参【优化】[PR](https://gitee.com/aizuda/easy-retry/pulls/6)
+  4. 移除重复的ThreadLocal赋值动作 【优化】[PR](https://gitee.com/aizuda/easy-retry/pulls/4)
+  5. 优化请求客户端的日志信息 【优化】
+  6. 组配置校验分区时，验证对应的表是否存在 【**新增**】
+  7. 修复新增组配置，分区为0校验异常 【BUG】
+  8. POD查询新增过期时间过滤 【**新增**】
+  9. 优化本地重试注解中的exclude和include，配置了仍然执行了2次重试 【BUG】
+  10. 新增调用客户端代理类【**新增**】
+  11. 新增下线路由剔除功能【**新增**】
+  12. 新增路由转移功能 【**新增**】
+  13. 添加启动logo 【**新增**】
+  14. 优化表定义 【优化】
+  15. 看板查询失败问题 【BUG】
+  16. 优化详情页查询 【优化】
+  17. 去除回调重试流量标识【优化】
+  18. 优化日志存储逻辑【优化】
+  19. 新增日志过期策略配置 【**新增**】
+  20. 新增定时清除日志功能 【**新增**】
+  21. 优化看板页面日志的查询统计【优化】
+  22. 新增日志详情页查询调度日志列表 【**新增**】
+  23. 优化详情页查询 【优化】
+  24. 修复不同组相同场景添加失败问题 
+  25. 优化任务详情页，重试日志只显示当前场景 
+  26. 后端二次校验分区数 【优化】
+  27. 修复回滚主键冲突问题 【BUG】
+  28. 新增ReBalanceFilterStrategies过滤【**新增**】
+  29. 新增pod列表查询【**新增**】
+  30. 优化路由注册 【**新增**】
+  31. 重构组ReBalance逻辑【**新增**】
+  32. 优化客户端和服务端注册逻辑 【**新增**】
+  33. 优化配置同步逻辑 【**新增**】
+  34. 添加初始化时指定数据库的逻辑【**新增**】[PR](https://gitee.com/aizuda/easy-retry/pulls/1)
 
-<style>
-.become-sponsor {
-  padding: 8px 20px;
-  display: inline-block;
-  color: #11a8cd;
-  border-radius: 30px;
-  box-sizing: border-box;
-  border: 1px solid #11a8cd;
-}
-</style>
+# <div class="icon-img-container"><img src="/img/icon/gitlab.png" alt="图标" class="icon-image"> <div class="icon-text">代码托管</div> </div>
 
-<br/>
+<div class="git-icon-image">
+    <a href="https://github.com/aizuda/easy-retry">
+        <img src="/img/icon/logo-github.png" alt="Github地址" width="100px" height="32px">
+    </a>
+    <a href="https://gitee.com/aizuda/easy-retry">
+        <img src="/img/icon/logo-gitee.png" alt="Gitee地址" width="100px" height="32px">
+    </a>
+</div>
 
-[comment]: <> (<p align="center">)
+# <div class="icon-img-container"><img src="/img/icon/code.png" alt="图标" class="icon-image"> <div class="icon-text">参与研发</div> </div>
 
-[comment]: <> (  <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/v/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a>)
+欢迎各路好汉一起来参与完善 EasyRetry，我们期待你的 PR！
 
-[comment]: <> (  <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/dt/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a>)
+如果想贡献，请先查看[参与开发](/pages/5f5ef0/)。
 
-[comment]: <> (  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing' alt='GitHub stars' class="no-zoom"></a>)
 
-[comment]: <> (  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/forks/xugaoyi/vuepress-theme-vdoing' alt='GitHub forks' class="no-zoom"></a>)
+# <div class="icon-img-container"><img src="/img/icon/design-idea.png" alt="图标" class="icon-image"> <div class="icon-text">设计思想</div> </div>
 
-[comment]: <> (</p>)
+# <div class="icon-img-container"><img src="/img/icon/aizuda.png" alt="图标" width=32px height=32px> <div class="icon-text">aizuda组织成员</div> </div>
 
-<br/>
-
-[comment]: <> (<p align="center" style="color: #999;">)
-
-[comment]: <> (  赞助商 &#40;进入注册为主题作者充电&#41;)
-
-[comment]: <> (</p>)
-
-[comment]: <> (<p align="center">)
-
-[comment]: <> (  <a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://cdn.staticaly.com/gh/xugaoyi/blog-gitalk-comment@master/img/441669861566_.2bedplbm21hc.jpg" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>)
-
-[comment]: <> (</p>)
-
-[comment]: <> (## 特别用户)
-
-[comment]: <> (::: cardList 3)
-
-[comment]: <> (```yaml)
-
-[comment]: <> (# - name: OpenHarmony)
-
-[comment]: <> (#   desc: 开放原子开源基金会)
-
-[comment]: <> (#   link: https://docs.openharmony.cn/pages/000000/)
-
-[comment]: <> (#   bgColor: '#f1f1f1')
-
-[comment]: <> (#   textColor: '#2A3344')
-
-[comment]: <> (- name: MyBatis-Plus官网)
-
-[comment]: <> (  desc: 🚀为简化开发而生)
-
-[comment]: <> (  link: https://baomidou.com/)
-
-[comment]: <> (  bgColor: '#f1f1f1')
-
-[comment]: <> (  textColor: '#2A3344')
-
-[comment]: <> (- name: Deepin 社区)
-
-[comment]: <> (  desc: Deepin 应用开发技术分享、DTK开发经验等)
-
-[comment]: <> (  link: https://docs.deepin.org)
-
-[comment]: <> (  bgColor: '#f1f1f1')
-
-[comment]: <> (  textColor: '#2A3344')
-
-[comment]: <> (- name: VForm官网)
-
-[comment]: <> (  desc: 低代码表单优选方案，拖拽式设计，一键生成源码)
-
-[comment]: <> (  link: http://www.vform666.com)
-
-[comment]: <> (  bgColor: '#f1f1f1')
-
-[comment]: <> (  textColor: '#2A3344')
-
-[comment]: <> (```)
-
-[comment]: <> (:::)
-
-<br/>
-
-<!-- ## ⚡️未来...
-
-::: tip
-期待 [VuePress v2.0](https://github.com/vuepress/vuepress-next) 以及 [VitePress](https://github.com/vuejs/vitepress) 的正式发布...
-
-届时，VuePress 1.x 编译慢的缺点将得到极大的改善。我将会视情况把主题升级至 VuePress v2.0 或 VitePress。还希望大家多多 [:sparkling_heart:支持](/pages/1b12ed/) 哟，持续关注吧~
-::: -->
-
-<br/>
-
-<!-- ## 💎 公众号
-`有趣研究社`是本人对各种有趣的、好玩的、沙雕的创意和想法以在线小网站或者文章的形式表达出来，比如：
-- [小霸王游戏机](https://game.xugaoyi.com)
-- [爱国头像生成器](https://avatar.xugaoyi.com/)
-- [到账语音生成器](https://zfb.xugaoyi.com/)
-
-还有更多好玩的等你去探索吧~
-
-::: center
-<img src="https://fastly.jsdelivr.net/gh/xugaoyi/image_store@master/blog/qrcode.zdqv9mlfc0g.jpg"  style="width:190px;" />
-:::
-
-<br/> -->
-
-## ⚡ 反馈与交流
+# ⚡ 反馈与交流
 
 在使用过程中有任何问题和想法，请给我提 [Issue](https://gitee.com/aizuda/easy-retry/issues)。
 你也可以在Issue查看别人提的问题和给出解决方案。
@@ -164,8 +104,43 @@ postList: none
   </tbody>
 </table>
 
-## 友情链接
+# 友情链接
 * [杨不易呀](https://yby6.com/)
+
+<p align="center">
+  <a class="become-sponsor" href="/pages/793dcb/">支持这个项目</a>
+</p>
+
+<style>
+.become-sponsor {
+  padding: 8px 20px;
+  display: inline-block;
+  color: #11a8cd;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 1px solid #11a8cd;
+}
+.icon-img-container {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.icon-image{
+  width: 30px;
+  height: 30px;
+}
+.icon-text{
+  margin-left: 10px;
+}
+.git-icon-image img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+  pointer-events: none;
+}
+</style>
+
+<br/>
 
 <!-- AD -->
 <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>

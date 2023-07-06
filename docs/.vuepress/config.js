@@ -23,60 +23,46 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: '首页', link: '/'},
+            // {
+            //     text: '指南', link: '/pages/a2f161/', items: [
+            //         {text: '01.介绍', link: '/pages/a2f161/'},
+            //         {text: '02.快速上手', link: '/pages/793dcb/'},
+            //         {text: '03.最佳实践', link: '/pages/52d5c3/'},
+            //         {
+            //             text: '核心功能', items: [
+            //                 { text: '01.仪表盘', link: '/pages/960e25/' },
+            //                 { text: '02.核心功能配置', link: '/pages/bef6e8/' },
+            //                 { text: '03.死信队列列表', link: '/pages/e9bb28/' },
+            //                 { text: '04.用户列表', link: '/pages/e3fd47/' },
+            //                 { text: '05.重试列表', link: '/pages/0dd09/' },
+            //                 { text: '06.重试日志列表', link: '/pages/c6173a/' },
+            //             ]
+            //         },
+            //         {
+            //             text: '系统原理剖析', items: [
+            //                 { text: '01.客户端剖析', link: '/pages/7aeedd/' },
+            //                 { text: '02.服务端剖析', link: '/pages/3bc7f3/' }
+            //             ]
+            //         }
+            //     ]
+            // },
             {
-                text: '指南', link: '/pages/a2f161/', items: [
-                    {text: '01.介绍', link: '/pages/a2f161/'},
-                    {text: '02.快速上手', link: '/pages/793dcb/'},
-                    {text: '03.最佳实践', link: '/pages/52d5c3/'},
+                text: '文档', items: [
                     {
-                        text: '核心功能', items: [
-                            { text: '01.仪表盘', link: '/pages/960e25/' },
-                            { text: '02.核心功能配置', link: '/pages/bef6e8/' },
-                            { text: '03.死信队列列表', link: '/pages/e9bb28/' },
-                            { text: '04.用户列表', link: '/pages/e3fd47/' },
-                            { text: '05.重试列表', link: '/pages/0dd09/' },
-                            { text: '06.重试日志列表', link: '/pages/c6173a/' },
+                        text: '最新特性', items: [
+                            { text: '最新特性v2.0.x', link: '/pages/f203ee/' },
                         ]
                     },
                     {
-                        text: '系统原理剖析', items: [
-                            { text: '01.客户端剖析', link: '/pages/7aeedd/' },
-                            { text: '02.服务端剖析', link: '/pages/3bc7f3/' }
+                        text: 'v2.0.x', items: [
+                            { text: '系统介绍', link: '/pages/d1d1da/' },
+                            { text: '使用说明', link: '/pages/406a66/' },
                         ]
                     }
-                    // { text: '核心配置和约定', link: '/pages/33d574/' },
-                    // { text: '自动生成front matter', link: '/pages/088c16/' },
-                    // { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
-                    // { text: 'Markdown 中使用组件', link: '/pages/197691/' },
-                    // {
-                    //   text: '相关文章', items: [
-                    //     { text: '如何优雅地重试', link: '/pages/8dfab5/' },
-                    //     // { text: '如何让你的笔记更有表现力', link: '/pages/dd027d/' },
-                    //     // { text: '批量操作front matter工具', link: '/pages/2b8e22/' },
-                    //     // { text: '部署', link: '/pages/0fc1d2/' },
-                    //     // { text: '关于写文章和H1标题', link: '/pages/9ae0bd/' },
-                    //     // { text: '关于博客搭建与管理', link: '/pages/26997d/' },
-                    //     // { text: '在线编辑和新增文章的方法', link: '/pages/c5a54d/' },
-                    //   ]
-                    // }
                 ]
             },
             { text: '更新日志', link: '/pages/bbdaf6/' },
-            // {
-            //     text: '配置', link: '/pages/a20ce8/', items: [
-            //         {text: '主题配置', link: '/pages/a20ce8/'},
-            //         {text: '首页配置', link: '/pages/f14bdb/'},
-            //         {text: 'front matter配置', link: '/pages/3216b0/'},
-            //         {text: '目录页配置', link: '/pages/54651a/'},
-            //         {text: '添加摘要', link: '/pages/1cc523/'},
-            //         {text: '修改主题颜色和样式', link: '/pages/f51918/'},
-            //         {text: '评论栏', link: '/pages/ce175c/'},
-            //     ]
-            // },
             { text: '优秀文章', link: '/pages/db78e2/' },
-            // { text: '案例', link: '/pages/5d571c/' },
-            // { text: '问答', link: '/pages/9cc27d/' },
-            // { text: '赞助', link: '/pages/1b12ed/' },
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo1.png', // 导航栏logo
@@ -220,5 +206,14 @@ module.exports = {
     extraWatchFiles: [
         '.vuepress/config.js',
         '.vuepress/config/htmlModules.js',
-    ]
+    ],
+
+    // 结合 Webpack Dev Server 实现热部署
+    configureWebpack: {
+        devServer: {
+            watchOptions: {
+                poll: true
+            }
+        }
+    }
 }
