@@ -17,12 +17,7 @@ module.exports = [
     },
     {
         text: '问答', items: [
-            {text: '常见问题', link: '/pages/bbdaf61/'},
-            {
-                text: '专题解释', items: [
-                    {text: '待完成', link: '/pages/bbdaf62/'},
-                ]
-            },
+            {text: '常见问题', link: '/pages/63d50c/'},
         ]
     },
     {
@@ -30,10 +25,10 @@ module.exports = [
             // {text: '项目介绍', link: ''},
             // {text: '项目成员', link: ''},
             {text: '更新记录', link: '/pages/bbdaf6/'},
-            // {text: '参与开发', link: ''},
+            {text: '参与开发', link: '/pages/5f5ef0'},
         ]
     },
-    // {text: '加入群聊', link: '/pages/bbdaf6/'},
+    {text: '加入群聊', link: '/pages/bb982b/'},
     // {text: '用户', link: '/pages/bbdaf6/'},
     { text: '优秀文章', link: '/pages/db78e2/' },
     { text: 'Gitee', link: 'https://gitee.com/aizuda/easy-retry' },
