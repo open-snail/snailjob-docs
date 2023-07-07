@@ -2,7 +2,7 @@
   "name": "theme-vdoing-doc",
   "version": "1.0.0",
   "scripts": {
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "dev": "vuepress dev docs",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "deploy": "bash deploy.sh",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D",
