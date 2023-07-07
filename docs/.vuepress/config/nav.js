@@ -9,7 +9,8 @@ module.exports = [
             },
             {
                 text: 'v2.0.x', items: [
-                    {text: '系统介绍', link: '/pages/d1d1da/'},
+                    {text: 'EasyRetry简介', link: '/pages/d1d1da/'},
+                    {text: '项目特性', link: '/pages/540553/'},
                     {text: '使用说明', link: '/pages/406a66/'},
                 ]
             }
@@ -25,7 +26,7 @@ module.exports = [
             // {text: '项目介绍', link: ''},
             // {text: '项目成员', link: ''},
             {text: '更新记录', link: '/pages/bbdaf6/'},
-            {text: '参与开发', link: '/pages/5f5ef0'},
+            {text: '参与开发', link: '/pages/5f5ef1/'},
         ]
     },
     {text: '加入群聊', link: '/pages/bb982b/'},
