@@ -10,6 +10,7 @@ module.exports = [
             {
                 text: 'v2.0.x', items: [
                     {text: '项目简介', link: '/pages/d1d1da/'},
+                    {text: '系统概念', link: '/pages/97cde9/'},
                     {text: '项目特性', link: '/pages/540553/'},
                     {text: '使用说明', link: '/pages/406a66/'},
                     {text: '设计原理', link: '/pages/3e1124/'},
