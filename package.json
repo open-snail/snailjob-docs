@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D",
     "editFm": "node utils/editFrontmatter.js"
