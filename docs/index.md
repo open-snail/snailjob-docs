@@ -4,7 +4,7 @@ heroImage: /img/logo1.png
 heroText: Easy-Retry
 tagline: 🚀基于Base思想实现的分布式服务重试组件
 actionText: ️v2.0全新发布 →
-actionLink: /pages/a2f161/
+actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
@@ -93,24 +93,6 @@ postList: none
   border-radius: 30px;
   box-sizing: border-box;
   border: 1px solid #11a8cd;
-}
-.icon-img-container {
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-}
-.icon-image{
-  width: 30px;
-  height: 30px;
-}
-.icon-text{
-  margin-left: 10px;
-}
-.git-icon-image img{
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 40px;
-  pointer-events: none;
 }
 </style>
 
