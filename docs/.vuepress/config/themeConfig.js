@@ -51,7 +51,7 @@ module.exports = {
             {
                 iconClass: 'icon-gitee',
                 title: 'Gitee',
-                link: 'https://github.com/xugaoyi'
+                link: 'https://github.com/aizuda'
             }
         ]
     },

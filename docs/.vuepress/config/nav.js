@@ -31,7 +31,6 @@ module.exports = [
         ]
     },
     {text: '加入群聊', link: '/pages/bb982b/'},
-    // {text: '用户', link: '/pages/bbdaf6/'},
     { text: '优秀文章', link: '/pages/db78e2/' },
     { text: 'Gitee', link: 'https://gitee.com/aizuda/easy-retry' },
     { text: 'Github', link: 'https://github.com/aizuda/easy-retry' }
