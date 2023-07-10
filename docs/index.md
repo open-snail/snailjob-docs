@@ -24,7 +24,7 @@ features: # 可选的
 postList: none
 ---
 
-## 📌特性
+## <EasyRetryIcon iconType='icon-gengxintexing' /> 特性
 * **易用性**
   业务接入成本小。避免依赖研发人员的技术水平，保障重试的稳定性
 * **灵活性**
@@ -49,13 +49,7 @@ postList: none
 <Notice />
 
 ## 代码托管
-<a href="https://github.com/aizuda/easy-retry" target="_blank">
-  GITHUB
-</a>
-|
-<a href="https://gitee.com/aizuda/easy-retry" target="_blank">
-  GITEE
-</a>
+<CodeHosting />
 
 <br/>
 <br/>
