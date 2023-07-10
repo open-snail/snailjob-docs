@@ -61,19 +61,23 @@ postList: none
 <br/>
 
 ## 设计思想 
-### 系统架构图
 
-<img :src="$withBase('/img/系统架构图- 2.0.png')" class="no-zoom" style="zoom: 100%;">
+[//]: # (### 系统架构图)
 
-### 系统功能架构图
+[//]: # ()
+[//]: # (<img :src="$withBase&#40;'/img/系统架构图- 2.0.png'&#41;" class="no-zoom" style="zoom: 100%;">)
+
+[//]: # (### 系统功能架构图)
 <img :src="$withBase('/img/系统功能架构图-v2.0.png')" class="no-zoom" style="zoom: 100%;">
 
-[comment]: <> (## aizuda组织成员)
+## <EasyRetryIcon iconType='icon-zuzhichengyuan' /> aizuda组织成员
+<Member />
 
-[comment]: <> (<br/>)
+<br/>
+<br/>
 
-## 友情链接
-* [杨不易呀](https://yby6.com/)
+## <EasyRetryIcon iconType='icon-youqinglianjie' />  友情链接
+<FriendlyLinks />
 
 <p align="center">
   <a class="become-sponsor" href="/pages/793dcb/">支持这个项目</a>
