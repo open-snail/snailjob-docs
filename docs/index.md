@@ -2,8 +2,8 @@
 home: true
 heroImage: /img/logo1.png
 heroText: Easy-Retry
-tagline: 🚀基于Base思想实现的分布式服务重试组件
-actionText: ️v2.0全新发布 →
+tagline: 🚀基于BASE思想实现的分布式服务重试组件
+actionText: ️v2.0 全新发布 →
 actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
@@ -48,19 +48,19 @@ postList: none
   
 <Notice />
 
-## 代码托管
+## <EasyRetryIcon iconType='icon-codelibrary-fill' /> 代码托管
 <CodeHosting />
 
 <br/>
 <br/>
 
-## 参与研发
+## <EasyRetryIcon iconType='icon-canyuzhe_canyuzhe' /> 参与研发
 欢迎各路好汉一起来参与完善 EasyRetry，我们期待你的 PR！
 如果想贡献，请先查看[参与开发](/pages/5f5ef0/)。
 <br/>
 <br/>
 
-## 设计思想 
+## <EasyRetryIcon iconType='icon-jiagoutu' /> 设计思想 
 
 [//]: # (### 系统架构图)
 
