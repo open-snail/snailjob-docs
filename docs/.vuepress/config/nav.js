@@ -33,6 +33,7 @@ module.exports = [
     },
     {text: '加入群聊', link: '/pages/bb982b/'},
     { text: '优秀文章', link: '/pages/db78e2/' },
+    { text: '用户', link: '/pages/538703/' },
     { text: '控制台', link: 'http://preview.easyretry.com/' },
     { text: 'Gitee', link: 'https://gitee.com/aizuda/easy-retry' },
     { text: 'Github', link: 'https://github.com/aizuda/easy-retry' }
