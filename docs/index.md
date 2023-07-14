@@ -8,17 +8,17 @@ actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
-  - title: 管控重试流量
+  - title: 🌸 管控重试流量
     details: 预防重试风暴，及早发现和预警，并且提供流程管理手段
-  - title: 接入简单
+  - title: 🌼 接入简单
     details: 一分钟上手，支持WEB页面对重试数据CRUD操作;业务接入成本小。避免依赖研发人员的技术水平，保障重试的稳定性
-  - title: 重试数据管理
+  - title: 🌹 重试数据管理
     details: 能够动态调整配置,启动/停止任务,以及终止运行中的重试数据; 可以做到重试数据不丢失、重试数据一键回放
-  - title: 多样化重试类型
+  - title: 🌻 多样化重试类型
     details: 支持ONLY_LOCAL、ONLY_REMOTE、LOCAL_REMOTE多种重试类型
-  - title: 支持多样化的告警方式
+  - title: 🌺 支持多样化的告警方式
     details: 邮箱、企业微信、钉钉、飞书等
-  - title: 多样化退避策略
+  - title: 🍀 多样化退避策略
     details: Cron、固定间隔、等级触发、随机时间触发等
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none

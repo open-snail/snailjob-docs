@@ -9,12 +9,12 @@ module.exports = [
             },
             {
                 text: 'v2.0.x', items: [
-                    {text: '项目简介', link: '/pages/d1d1da/'},
+                    {text: '🌼 项目简介', link: '/pages/d1d1da/'},
                     {text: '系统概念', link: '/pages/97cde9/'},
                     {text: '项目特性', link: '/pages/540553/'},
                     {text: '架构与功能', link: '/pages/540554/'},
                     {text: '服务部署', link: '/pages/406a66/'},
-                    {text: '场景应用', link: '/pages/406a68/'},
+                    {text: '🚀 场景应用', link: '/pages/406a68/'},
 
                 ]
             }
@@ -35,8 +35,8 @@ module.exports = [
     },
     {text: '加入群聊', link: '/pages/bb982b/'},
     { text: '优秀文章', link: '/pages/db78e2/' },
-    { text: '用户', link: '/pages/538703/' },
-    { text: '控制台', link: 'http://preview.easyretry.com/' },
+    { text: '谁在使用', link: '/pages/538703/' },
+    { text: '在线体验', link: 'http://preview.easyretry.com/' },
     { text: 'Gitee', link: 'https://gitee.com/aizuda/easy-retry' },
     { text: 'Github', link: 'https://github.com/aizuda/easy-retry' }
 ];
