@@ -20,17 +20,17 @@ export default {
       message: `🚀 Easy Retry ${this.version} 发布了`,
       top: '80px',
       style: {
-        'background-color': '#64a6ea'
+        'background-color': '#eeefef'
       },
       duration: 0,
       description: (
           <span>
               <ul>
-                <li>添加局部保存的提示</li>
-                <li>pod列表页新增消费组显示</li>
-                <li>优化IdempotentIdContext注释、手动生成幂等号改为IdempotentIdContext传参【优化】</li>
-                <li><a href="/pages/bbdaf6/">更多更新</a></li>
+                <li>新增日志过期策略配置【新增】</li>
+                <li>新增定时清除日志功能【新增】</li>
+                <li>pod列表页新增消费组显示【新增】</li>
               </ul>
+              <a href="/pages/bbdaf6/">更多信息</a>
             </span>
       ),
       onClose: () => {
