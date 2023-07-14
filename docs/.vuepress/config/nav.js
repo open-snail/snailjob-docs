@@ -15,7 +15,7 @@ module.exports = [
                     {text: '架构与功能', link: '/pages/540554/'},
                     {text: '服务部署', link: '/pages/406a66/'},
                     {text: '🚀 场景应用', link: '/pages/406a68/'},
-
+                    {text: '💥 HelloWorld', link: '/pages/da9ecc/'},
                 ]
             }
         ]
