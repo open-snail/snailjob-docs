@@ -60,7 +60,7 @@ module.exports = {
         copyrightInfo: [
             '<a href="http://aizuda.com/" target="_blank" style="font-weight:bold">Team Aizudai</a>',
             ' | ',
-            '<a href="http://beian.miit.gov.cn/" target=_blank>皖ICP备16014822号</a>',
+            '<a href="http://beian.miit.gov.cn/" target=_blank>皖ICP备16014822号-4</a>',
             '</p>',
         ].join('')
     },
