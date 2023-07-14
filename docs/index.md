@@ -24,6 +24,16 @@ features: # 可选的
 postList: none
 ---
 
+## ✨ 当前最新版本
+```java
+
+<dependency>
+    <groupId>com.aizuda</groupId>
+    <artifactId>easy-retry-client-starter</artifactId>
+    <version>2.0.1</version>
+</dependency>
+```
+
 ## <EasyRetryIcon iconType='icon-gengxintexing' /> 特性
 * **易用性**
   业务接入成本小。避免依赖研发人员的技术水平，保障重试的稳定性

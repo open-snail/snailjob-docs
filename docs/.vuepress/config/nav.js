@@ -13,7 +13,9 @@ module.exports = [
                     {text: '系统概念', link: '/pages/97cde9/'},
                     {text: '项目特性', link: '/pages/540553/'},
                     {text: '架构与功能', link: '/pages/540554/'},
-                    {text: '使用说明', link: '/pages/cfd232/'},
+                    {text: '服务部署', link: '/pages/406a66/'},
+                    {text: '场景应用', link: '/pages/406a68/'},
+
                 ]
             }
         ]
