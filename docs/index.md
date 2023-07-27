@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/logo1.png
 heroText: Easy-Retry
-tagline: 🚀基于BASE思想实现的分布式服务重试组件
+tagline: 🚀致力提高分布式业务系统一致性的分布式重试平台
 actionText: ️v2.0 全新发布 →
 actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
@@ -30,7 +30,7 @@ postList: none
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
 </dependency>
 ```
 
