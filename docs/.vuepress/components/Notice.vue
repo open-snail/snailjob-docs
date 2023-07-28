@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.0'
+      version: '2.0.3'
     };
   },
   mounted() {
@@ -26,9 +26,8 @@ export default {
       description: (
           <span>
               <ul>
-                <li>新增日志过期策略配置【新增】</li>
-                <li>新增定时清除日志功能【新增】</li>
-                <li>pod列表页新增消费组显示【新增】</li>
+                <li>修复回调状态错误问题【BUG】<a href="https://gitee.com/aizuda/easy-retry/issues/I7NHFE">issues</a></li>
+                <li>优化定时处理重试完成和重试最大次数的数据</li>
               </ul>
               <a href="/pages/bbdaf6/">更多信息</a>
             </span>
