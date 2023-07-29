@@ -4,7 +4,7 @@
       <a href="https://easy-security.aizuda.com/" target="_blank">
         <div class="item">
           <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50" height="50">
-          <div style="font-weight: bolder;font-size: 20px;color: black">Easy-Security</div>
+          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">Easy-Security</div>
         </div>
       </a>
 

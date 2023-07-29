@@ -4,7 +4,7 @@
       <a href="/" target="_blank">
         <div class="item">
 <!--          <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50" height="50">-->
-          <div style="font-weight: bolder;font-size: 20px;color: black">某大型金融公司</div>
+          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">某大型金融公司</div>
         </div>
       </a>
 
