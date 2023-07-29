@@ -26,55 +26,68 @@
     &::after
       content: '。( Win + . ) or ( ⌃ + ⌘ + ␣ ) open Emoji'
       color: #999
+
   .gt-meta
-    border-color var(--borderColor)!important
+    border-color var(--borderColor) !important
+
   .gt-comments-null
     color var(--textColor)
     opacity .5
+
   .gt-header-textarea
     color var(--textColor)
-    background rgba(180,180,180,0.1)!important
+    background rgba(180, 180, 180, 0.1) !important
+
   .gt-btn
     border-color $accentColor!important
     background-color $accentColor!important
+
   .gt-btn-preview
-    background-color rgba(255,255,255,0)!important
+    background-color rgba(255, 255, 255, 0) !important
     color $accentColor!important
+
   a
     color $accentColor!important
+
   .gt-svg svg
     fill $accentColor!important
-  .gt-comment-content,.gt-comment-admin .gt-comment-content
-    background-color rgba(150,150,150,0.1)!important
+
+  .gt-comment-content, .gt-comment-admin .gt-comment-content
+    background-color rgba(150, 150, 150, 0.1) !important
+
     &:hover
-      box-shadow 0 0 25px rgba(150,150,150,.5)!important
+      box-shadow 0 0 25px rgba(150, 150, 150, .5) !important
+
     .gt-comment-body
-      color var(--textColor)!important
+      color var(--textColor) !important
 
 
 // qq徽章
 .qq
   position: relative;
+
 .qq::after
   content: "可撩";
   background: $accentColor;
-  color:#fff;
+  color: #fff;
   padding: 0 5px;
   border-radius: 10px;
-  font-size:12px;
+  font-size: 12px;
   position: absolute;
   top: -4px;
   right: -35px;
-  transform:scale(0.85);
+  transform: scale(0.85);
 
 // demo模块图标颜色
 body .vuepress-plugin-demo-block__wrapper
-  &,.vuepress-plugin-demo-block__display
-    border-color rgba(160,160,160,.3)
+  &, .vuepress-plugin-demo-block__display
+    border-color rgba(160, 160, 160, .3)
+
   .vuepress-plugin-demo-block__footer:hover
     .vuepress-plugin-demo-block__expand::before
       border-top-color: $accentColor !important;
       border-bottom-color: $accentColor !important;
+
     svg
       fill: $accentColor !important;
 
@@ -85,9 +98,10 @@ body .vuepress-plugin-demo-block__wrapper
   max-height: calc(100vh - 6rem)
   @media (max-width: 719px) {
     width: 90vw;
-    min-width: 90vw!important;
+    min-width: 90vw !important;
     margin-right: -20px;
   }
+
   .highlight
     color: $accentColor
     font-weight: bold
@@ -100,6 +114,11 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color var(--textColor)!important
+  color var(--textColor) !important
   font-weight: 500;
+}
+
+.ant-notification-notice-message {
+  color var(----textLightenColor) !important
+  font-weight: 800
 }

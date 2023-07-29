@@ -20,7 +20,8 @@ export default {
       message: `🚀 Easy Retry ${this.version} 发布了`,
       top: '80px',
       style: {
-        'background-color': '#eeefef'
+        'background-color': 'var(--bodyBg)!important',
+        'color': 'var(--textColor)!important'
       },
       duration: 0,
       description: (
