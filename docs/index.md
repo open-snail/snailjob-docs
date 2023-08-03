@@ -70,6 +70,13 @@ postList: none
 <br/>
 <br/>
 
+## <EasyRetryIcon iconType='icon-duibi' /> 重试策略
+
+<img :src="$withBase('/img/retry-strategy.png')" class="no-zoom" style="zoom: 100%;">
+
+<br/>
+<br/>
+
 ## <EasyRetryIcon iconType='icon-jiagoutu' /> 设计思想 
 
 [//]: # (### 系统架构图)
