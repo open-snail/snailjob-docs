@@ -30,7 +30,7 @@ postList: none
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
-    <version>2.0.3</version>
+    <version>2.1.0</version>
 </dependency>
 ```
 
@@ -70,7 +70,7 @@ postList: none
 <br/>
 <br/>
 
-## <EasyRetryIcon iconType='icon-duibi' /> 重试策略
+## <EasyRetryIcon iconType='icon-duibi' /> 重试方案对比
 
 <img :src="$withBase('/img/retry-strategy.png')" class="no-zoom" style="zoom: 100%;">
 

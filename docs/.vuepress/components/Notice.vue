@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.0.3'
+      version: '2.1.0'
     };
   },
   mounted() {
@@ -27,8 +27,11 @@ export default {
       description: (
           <span>
               <ul>
-                <li>修复回调状态错误问题【BUG】<a href="https://gitee.com/aizuda/easy-retry/issues/I7NHFE">issues</a></li>
-                <li>优化定时处理重试完成和重试最大次数的数据</li>
+                <li>【新增】增批量新增任务功能<a href="https://gitee.com/aizuda/easy-retry/issues/I7JOPV">issues</a></li>
+                <li>【新增】客户端支持yml、JVM参数和自动获取IP和端口三种方式 <a href="https://gitee.com/aizuda/easy-retry/issues/I7M0II">issues</a></li>
+                <li>【优化】netty服务端接收请求改为actor模型 <a href="https://gitee.com/aizuda/easy-retry/issues/I7N9D5">issues</a></li>
+                <li>【优化】优化调度日志信息 <a href="https://github.com/aizuda/easy-retry/issues/1">issues</a></li>
+                <li>【优化】组配置添加字段说明文档 <a href="https://github.com/aizuda/easy-retry/issues/2">issues</a></li>
               </ul>
               <a href="/pages/bbdaf6/">更多信息</a>
             </span>
