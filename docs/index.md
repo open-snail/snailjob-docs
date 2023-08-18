@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /img/logo1.png
-heroText: Easy-Retry
+heroImage: /img/logo-mini.png
+heroText: Easy Retry
 tagline: 🚀致力提高分布式业务系统一致性的分布式重试平台
 actionText: ️v2.0 全新发布 →
 actionLink: /pages/d1d1da/
