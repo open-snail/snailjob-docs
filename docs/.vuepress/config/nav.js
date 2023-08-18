@@ -35,6 +35,7 @@ module.exports = [
             {text: '参与开发', link: '/pages/5f5ef1/'},
         ]
     },
+    {text: '❤️赞助', link: '/pages/1b12ed/'},
     {text: '👥 加入群聊', link: '/pages/bb982b/'},
     { text: '🏆 优秀文章', link: '/pages/db78e2/' },
     { text: '👤 谁在使用', link: '/pages/538703/' },

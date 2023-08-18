@@ -30,7 +30,7 @@ postList: none
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
-    <version>2.1.0</version>
+    <version>2.1.1</version>
 </dependency>
 ```
 
