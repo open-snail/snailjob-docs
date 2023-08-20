@@ -29,7 +29,7 @@ export default {
               <ul>
                 <li>【BUG】修复windows启动netty server失败问题<a href="https://gitee.com/aizuda/easy-retry/issues/I7TZ51">issues</a></li>
               </ul>
-              <a href="/pages/bbdaf6/">更多信息</a>
+              <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
       ),
       onClose: () => {
