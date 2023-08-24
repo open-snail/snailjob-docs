@@ -22,6 +22,17 @@
         </div>
       </a>
     </a-space>
+    <br/>
+    <br/>
+    <a-space>
+      <a href="http://gmoregalaxy.com/" target="_blank">
+        <div class="item">
+          <img src="../public/img/jimuyinhe.jpeg" width="50" height="50">
+          &nbsp;
+          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">上海极目银河数字科技有限公司</div>
+        </div>
+      </a>
+    </a-space>
   </div>
 </template>
 <script>
