@@ -24,13 +24,16 @@ features: # 可选的
 postList: none
 ---
 
+## <EasyRetryIcon iconType='icon-shipin' /> 视频教程
+[从0到1快速了解分布式重试组件EasyRetry](https://www.ixigua.com/i7269575684715086394/)
+
 ## ✨ 当前最新版本
 ```java
 
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
-    <version>2.1.1</version>
+    <version>2.2.0</version>
 </dependency>
 ```
 

@@ -22,6 +22,7 @@ module.exports = [
             }
         ]
     },
+    { text: '📺 视频教程', link: '/pages/a774e2/' },
     {
         text: '❓问答', items: [
             {text: '常见问题', link: '/pages/63d50c/'},
