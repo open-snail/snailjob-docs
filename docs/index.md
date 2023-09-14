@@ -3,7 +3,7 @@ home: true
 heroImage: /img/logo-mini.png
 heroText: Easy Retry
 tagline: 🚀致力提高分布式业务系统一致性的分布式重试平台
-actionText: ️v2.0 全新发布 →
+actionText: ️v2.3.0 & v3.0.0 全新发布 →
 actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
@@ -25,15 +25,25 @@ postList: none
 ---
 
 ## <EasyRetryIcon iconType='icon-shipin' /> 视频教程
-[从0到1快速了解分布式重试组件EasyRetry](https://www.ixigua.com/i7269575684715086394/)
+> 从0到1快速了解分布式重试组件EasyRetry
+> <br/><br/>
+> [<EasyRetryIcon iconType='icon-jinritoutiao'/>](https://www.ixigua.com/i7269575684715086394/) | [<EasyRetryIcon iconType='icon-wf_Bzhan'/>](https://www.bilibili.com/video/BV1Yu4y1k7WU/)
+
 
 ## ✨ 当前最新版本
 ```java
-
+// Spring Boot 2.x
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
     <version>2.2.0</version>
+</dependency>
+
+// Spring Boot 3.x
+<dependency>
+  <groupId>com.aizuda</groupId>
+  <artifactId>easy-retry-client-starter</artifactId>
+  <version>3.0.0</version>
 </dependency>
 ```
 
