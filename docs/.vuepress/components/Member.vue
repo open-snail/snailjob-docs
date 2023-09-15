@@ -10,8 +10,7 @@
 
       <a href="http://aizuda.com/" target="_blank">
         <div class="item">
-          <img src="https://foruda.gitee.com/avatar/1677328201256441811/8637007_aizuda_1677328201.png!avatar100" width="150" height="50">
-  <!--        <div>Easy-Security</div>-->
+          <img src="../public/img/aizuda.png" width="150" height="50">
         </div>
       </a>
       <a href="https://flowlong.gitee.io/" target="_blank">
