@@ -905,7 +905,7 @@ public class ExecutorMethodService {
 # 6、结语
 
 以上就是我们对于重试的思考和Easy-Retry的实践了，项目中的相关源码大家可以查看Gitee:
-[https://gitee.com/zhangyutongxue/easy-retry-demo.git](https://gitee.com/zhangyutongxue/easy-retry-demo.git)
+[https://gitee.com/byteblogs168/easy-retry-demo.git](https://gitee.com/byteblogs168/easy-retry-demo.git)
 当然，如果你有兴趣加入到Easy-Retry和我们一起共建，也欢迎联系博主。
 
 

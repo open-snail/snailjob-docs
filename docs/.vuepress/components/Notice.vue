@@ -27,11 +27,11 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】支持多数据库 mysql/maridb/postgreSQL <a href="https://gitee.com/aizuda/easy-retry/issues/I7Q2TS">issues</a></li><br/>
-                <li>【新增】客户端EasyRetryListener、RetryArgSerializer、RetrySiteSnapshotContext 使用SPI形式接入 <a href="https://github.com/aizuda/easy-retry/issues/5">issues</a></li><br/>
-                <li>【BUG】修复幂等没有过滤类型为TaskTypeEnum.RETRY和状态：RetryStatusEnum.RUNNING问题 <a href="https://gitee.com/aizuda/easy-retry/issues/I7U2WB">issues</a></li><br/>
-                <li>【新增】死信队列支持批量回滚和批量删除  <a href="https://gitee.com/aizuda/easy-retry/issues/I7U2WB">issues</a></li><br/>
-                <li>【优化】去除hutool-all改为按需引入</li>
+                <li>【新增】支持Spring Boot 3.x <a href="ttps://gitee.com/aizuda/easy-retry/issues/I7Q2TI">issues</a></li><br/>
+                <li>【新增】手动执行任务操作 <a href="https://gitee.com/aizuda/easy-retry/issues/I80WPQ">issues</a></li><br/>
+                <li>【BUG】@Retryable注解在接口上不生效 <a href="https://gitee.com/aizuda/easy-retry/issues/I7VGS8">issues</a></li><br/>
+                <li>【BUG】多场景数据上报时重复生成retryTask  <a href="https://github.com/aizuda/easy-retry/issues/7">issues</a></li><br/>
+                <li>【优化】bizNo支持Aviator、SPEL、QLExpress等多种表达式并通过SPI机制实现灵活扩展<a href="https://gitee.com/aizuda/easy-retry/issues/I801A7">issues</a></li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
