@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.6.0",
+    "async-validator": "3.5.2",
     "core-js": "^2.6.11",
-    "async-validator": "3.5.2"
+    "yarn": "^1.22.19"
   }
 }
