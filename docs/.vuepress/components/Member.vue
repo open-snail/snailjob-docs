@@ -1,16 +1,15 @@
 <template>
   <div>
     <a-space :size="10">
+      <a href="http://aizuda.com/" target="_blank">
+        <div class="item">
+          <img src="../public/img/aizuda.png" width="150" height="50">
+        </div>
+      </a>
       <a href="https://easy-security.aizuda.com/" target="_blank">
         <div class="item">
           <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50" height="50">
           <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">Easy-Security</div>
-        </div>
-      </a>
-
-      <a href="http://aizuda.com/" target="_blank">
-        <div class="item">
-          <img src="../public/img/aizuda.png" width="150" height="50">
         </div>
       </a>
       <a href="https://flowlong.gitee.io/" target="_blank">
