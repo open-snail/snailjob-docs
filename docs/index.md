@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/logo-mini.png
 heroText: Easy Retry
-tagline: 🚀 一款为了提高分布式业务系统一致性的分布式任务重试和分布式任务调度平台
+tagline: 🚀 一款提高分布式业务系统一致性的分布式任务重试与高性能任务调度平台
 actionText:  ️v2.4.0 全新发布 →
 actionLink: /pages/d1d1da/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
@@ -70,7 +70,20 @@ postList: none
     <version>2.4.0</version>
 </dependency>
 
-// Spring Boot 3.x
+// 重试模块
+<dependency>
+    <groupId>com.aizuda</groupId>
+    <artifactId>easy-retry-client-core</artifactId>
+    <version>2.4.0</version>
+</dependency>
+
+// 任务调度模块
+<dependency>
+    <groupId>com.aizuda</groupId>
+    <artifactId>easy-retry-client-job-core</artifactId>
+    <version>2.4.0</version>
+</dependency>
+// Spring Boot 3.x 暂不升级与2.3.0版本一致
 <dependency>
   <groupId>com.aizuda</groupId>
   <artifactId>easy-retry-client-starter</artifactId>
@@ -100,7 +113,7 @@ postList: none
 
 ## <EasyRetryIcon iconType='icon-canyuzhe_canyuzhe' /> 参与研发
 欢迎各路好汉一起来参与完善 EasyRetry，我们期待你的 PR！
-如果想贡献，请先查看[参与开发](/pages/5f5ef0/)。
+如果想贡献，请先查看[参与开发](/pages/5f5ef1/)。
 
 <p align="center">
   <a class="become-sponsor" href="/pages/793dcb/">支持这个项目</a>
