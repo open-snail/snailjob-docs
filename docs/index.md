@@ -58,7 +58,7 @@ postList: none
 [//]: # (<img :src="$withBase&#40;'/img/系统架构图- 2.0.png'&#41;" class="no-zoom" style="zoom: 100%;">)
 
 [//]: # (### 系统功能架构图)
-<img :src="$withBase('/img/系统功能架构图-v2.0.png')" class="no-zoom" style="zoom: 100%;">
+<img :src="$withBase('/img/系统功能架构图-v2.4.0.png')" class="no-zoom" style="zoom: 100%;">
 
 
 ## ✨ 当前最新版本
