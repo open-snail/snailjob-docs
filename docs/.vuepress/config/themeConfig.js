@@ -37,7 +37,7 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-        name: 'byteblogs168', // 必需
+        name: '奋斗小蜗牛', // 必需
         href: 'https://github.com/byteblogs168' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
