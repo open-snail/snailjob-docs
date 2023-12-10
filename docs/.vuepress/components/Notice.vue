@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.4.0'
+      version: '2.5.0'
     };
   },
   mounted() {
@@ -27,12 +27,12 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】支持分布式任务调度<a href="https://gitee.com/aizuda/easy-retry/issues/I81PL8">issues</a></li>
-                <li>【新增】支持重试场景执行超时时间设置</li>
-                <li>【新增】使用bucket机制优化负载均衡的机制</li>
-                <li>【BUG】修复了分布式锁所有节点都获取锁失败的问题 </li>
-                <li>【BUG】修复了分布式锁所有节点都获取锁失败的问题 </li>
-                <li>【优化】镜像支持linux/arm64,linux/amd64两种系统架构<a href="https://gitee.com/aizuda/easy-retry/issues/I7V29P">issues</a></li>
+                <li>【新增】任务调度新增手动暂停、取消、恢复执行中任务<a href="https://gitee.com/aizuda/easy-retry/issues/I8K6GV">issues</a></li>
+                <li>【新增】支持namespace隔离不同业务线的应用<a href="https://gitee.com/aizuda/easy-retry/issues/I85SPE">issues</a></li>
+                <li>【新增】定时清除调度任务的历史日志</li>
+                <li>【新增】告警支持通知负责人配置 </li>
+                <li>【BUG】修复分片模式参数提交失败问题 </li>
+                <li>【新增】Dashboard 添加任务调度数据展示<a href="https://gitee.com/aizuda/easy-retry/issues/I7V29P">issues</a></li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
