@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.2.0'
+      version: '2.5.0'
     };
   },
   mounted() {
@@ -27,11 +27,12 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】支持Spring Boot 3.x <a href="ttps://gitee.com/aizuda/easy-retry/issues/I7Q2TI">issues</a></li><br/>
-                <li>【新增】手动执行任务操作 <a href="https://gitee.com/aizuda/easy-retry/issues/I80WPQ">issues</a></li><br/>
-                <li>【BUG】@Retryable注解在接口上不生效 <a href="https://gitee.com/aizuda/easy-retry/issues/I7VGS8">issues</a></li><br/>
-                <li>【BUG】多场景数据上报时重复生成retryTask  <a href="https://github.com/aizuda/easy-retry/issues/7">issues</a></li><br/>
-                <li>【优化】bizNo支持Aviator、SPEL、QLExpress等多种表达式并通过SPI机制实现灵活扩展<a href="https://gitee.com/aizuda/easy-retry/issues/I801A7">issues</a></li>
+                <li>【新增】任务调度新增手动暂停、取消、恢复执行中任务<a href="https://gitee.com/aizuda/easy-retry/issues/I8K6GV">issues</a></li>
+                <li>【新增】支持namespace隔离不同业务线的应用<a href="https://gitee.com/aizuda/easy-retry/issues/I85SPE">issues</a></li>
+                <li>【新增】定时清除调度任务的历史日志</li>
+                <li>【新增】告警支持通知负责人配置 </li>
+                <li>【BUG】修复分片模式参数提交失败问题 </li>
+                <li>【新增】Dashboard 添加任务调度数据展示<a href="https://gitee.com/aizuda/easy-retry/issues/I7V29P">issues</a></li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>

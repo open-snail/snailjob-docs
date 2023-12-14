@@ -4,7 +4,7 @@
       <a href="/" target="_blank">
         <div class="item">
 <!--          <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50" height="50">-->
-          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">某大型金融公司</div>
+          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">山东酸橙网络有限公司</div>
         </div>
       </a>
 
@@ -30,6 +30,13 @@
           <img src="../public/img/jimuyinhe.jpeg" width="50" height="50">
           &nbsp;
           <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">上海极目银河数字科技有限公司</div>
+        </div>
+      </a>
+      <a href="http://www.auto1768.com/home/index" target="_blank">
+        <div class="item">
+          <img src="../public/img/shengda.png" width="100" height="50">
+          &nbsp;
+          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">盛大汽车服务集团有限公司</div>
         </div>
       </a>
     </a-space>

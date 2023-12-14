@@ -7,7 +7,7 @@ module.exports = {
     theme: 'vdoing', // 使用依赖包主题
     // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
     title: "Easy Retry",
-    description: '力提高分布式业务系统一致性的分布式重试平台',
+    description: '分布式任务重试二合一平台',
     // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
     head,
     themeConfig,
