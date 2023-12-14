@@ -40,7 +40,7 @@ module.exports = [
     {text: '👥 加入群聊', link: '/pages/bb982b/'},
     { text: '🏆 优秀文章', link: '/pages/db78e2/' },
     { text: '👤 谁在使用', link: '/pages/538703/' },
-    { text: '在线体验', link: 'http://preview.easyretry.com/' },
+    { text: '在线体验', link: '/pages/78ba75/' },
     { text: 'Gitee', link: 'https://gitee.com/aizuda/easy-retry' },
     { text: 'Github', link: 'https://github.com/aizuda/easy-retry' }
 ];
