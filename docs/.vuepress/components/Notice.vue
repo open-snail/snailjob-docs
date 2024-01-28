@@ -27,12 +27,11 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】任务调度新增手动暂停、取消、恢复执行中任务<a href="https://gitee.com/aizuda/easy-retry/issues/I8K6GV">issues</a></li>
-                <li>【新增】支持namespace隔离不同业务线的应用<a href="https://gitee.com/aizuda/easy-retry/issues/I85SPE">issues</a></li>
-                <li>【新增】定时清除调度任务的历史日志</li>
-                <li>【新增】告警支持通知负责人配置 </li>
-                <li>【BUG】修复分片模式参数提交失败问题 </li>
-                <li>【新增】Dashboard 添加任务调度数据展示<a href="https://gitee.com/aizuda/easy-retry/issues/I7V29P">issues</a></li>
+                <li>【新增】定时任务执行任务编排功能<a href="https://gitee.com/aizuda/easy-retry/issues/I8HGNQ">issues</a></li>
+                <li>【新增】 工作流执行手动/自动运行、复制工作流、停止等功能<a href="https://gitee.com/aizuda/easy-retry/issues/I85SPE">issues</a></li>
+                <li>【新增】任务调度支持失败重试</li>
+                <li>【新增】新增定时任务实时日志功能 </li>
+                <li style="color:red"> 本期是Spring Boot 2.x的最后一个版本，下一期将升级Spring boot3.x并作为长期支持版本</li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
