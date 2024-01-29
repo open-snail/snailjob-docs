@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.5.0'
+      version: '2.6.0'
     };
   },
   mounted() {
