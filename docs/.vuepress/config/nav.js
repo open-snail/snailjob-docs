@@ -4,7 +4,7 @@ module.exports = [
         text: '📚文档', items: [
             {
                 text: '最新特性', items: [
-                    {text: '最新特性v2.x', link: '/pages/f203ee/'},
+                    {text: '最新特性v3.x', link: '/pages/f203e4/'},
                 ]
             },
             {

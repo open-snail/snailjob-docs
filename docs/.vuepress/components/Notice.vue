@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '2.6.0'
+      version: '3.1.0'
     };
   },
   mounted() {
@@ -27,11 +27,11 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】定时任务执行任务编排功能<a href="https://gitee.com/aizuda/easy-retry/issues/I8HGNQ">issues</a></li>
-                <li>【新增】 工作流执行手动/自动运行、复制工作流、停止等功能<a href="https://gitee.com/aizuda/easy-retry/issues/I85SPE">issues</a></li>
-                <li>【新增】任务调度支持失败重试</li>
-                <li>【新增】新增定时任务实时日志功能 </li>
-                <li style="color:red"> 本期是Spring Boot 2.x的最后一个版本，下一期将升级Spring boot3.x并作为长期支持版本</li>
+                <li>【新增】 工作流支持任务节点手动停止能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NJG">issues</a></li>
+                <li>【新增】工作流支持任务节点手动重试能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NJ8">issues</a></li>
+                <li>【新增】支持两个同级方法重试<a href="https://gitee.com/aizuda/easy-retry/issues/I93NDG">issues</a></li>
+                <li>【新增】重试支持传播机制<a href="https://gitee.com/aizuda/easy-retry/issues/I93N8O">issues</a></li>
+                <li style="color:red"> SpringBoot版本升级至【3.2.2】</li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
