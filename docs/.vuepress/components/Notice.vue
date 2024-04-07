@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '3.1.0'
+      version: '3.2.0'
     };
   },
   mounted() {
@@ -27,11 +27,10 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】 工作流支持任务节点手动停止能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NJG">issues</a></li>
-                <li>【新增】工作流支持任务节点手动重试能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NJ8">issues</a></li>
-                <li>【新增】支持两个同级方法重试<a href="https://gitee.com/aizuda/easy-retry/issues/I93NDG">issues</a></li>
-                <li>【新增】重试支持传播机制<a href="https://gitee.com/aizuda/easy-retry/issues/I93N8O">issues</a></li>
-                <li style="color:red"> SpringBoot版本升级至【3.2.2】</li>
+                <li>【新增】 支持常见数据库例如oracle sqlserver<a href="https://gitee.com/aizuda/easy-retry/issues/I8NNZM">issues</a></li>
+                <li>【新增】工作流支持看板能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NGB">issues</a></li>
+                <li>【新增】实时日志合并功能<a href="https://gitee.com/aizuda/easy-retry/issues/I93NFY">issues</a></li>
+                <li>【新增】废弃dbType配置，新增自动识别数据库类型</li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>

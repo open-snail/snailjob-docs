@@ -67,21 +67,21 @@ postList: none
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-starter</artifactId>
-    <version>3.1.0</version>
+    <version>3.2.0</version>
 </dependency>
 
 // 重试模块
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-core</artifactId>
-    <version>3.1.0</version>
+    <version>3.2.0</version>
 </dependency>
 
 // 任务调度模块
 <dependency>
     <groupId>com.aizuda</groupId>
     <artifactId>easy-retry-client-job-core</artifactId>
-    <version>3.1.0</version>
+    <version>3.2.0</version>
 </dependency>
 ```
 <br/>
