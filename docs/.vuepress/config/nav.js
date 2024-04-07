@@ -8,7 +8,7 @@ module.exports = [
                 ]
             },
             {
-                text: 'v2.0.x', items: [
+                text: 'v3.x', items: [
                     {text: '🌼 项目简介', link: '/pages/d1d1da/'},
                     {text: '系统概念', link: '/pages/97cde9/'},
                     {text: '项目特性', link: '/pages/540553/'},
