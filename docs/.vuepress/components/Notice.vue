@@ -17,7 +17,7 @@ export default {
 
     sessionStorage.setItem("isShowed", 1);
     this.$notification.open({
-      message: `🚀 Easy Retry ${this.version} 发布了`,
+      message: `🚀 Snail Job ${this.version} 发布了`,
       top: '80px',
       style: {
         'background-color': 'var(--bodyBg)!important',
