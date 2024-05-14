@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       // 发布新版本需要更新
-      version: '3.2.0'
+      version: '1.0.0'
     };
   },
   mounted() {
@@ -17,7 +17,7 @@ export default {
 
     sessionStorage.setItem("isShowed", 1);
     this.$notification.open({
-      message: `🚀 Snail Job ${this.version} 发布了`,
+      message: `🚀 具有“三高特性”的全新 Snail Job ${this.version} 发布了`,
       top: '80px',
       style: {
         'background-color': 'var(--bodyBg)!important',
@@ -27,10 +27,8 @@ export default {
       description: (
           <span>
               <ul>
-                <li>【新增】 支持常见数据库例如oracle sqlserver<a href="https://gitee.com/aizuda/easy-retry/issues/I8NNZM">issues</a></li>
-                <li>【新增】工作流支持看板能力<a href="https://gitee.com/aizuda/easy-retry/issues/I93NGB">issues</a></li>
-                <li>【新增】实时日志合并功能<a href="https://gitee.com/aizuda/easy-retry/issues/I93NFY">issues</a></li>
-                <li>【新增】废弃dbType配置，新增自动识别数据库类型</li>
+                <li>为了促进系统更好的发展，自本版本起，EasyRetry正式更名为SnailJob，并从版本号1.0.0开始</li>
+                <li>基于soybeanjs全新打造的后端管理页面遥遥领先任何国产同品类系统</li>
               </ul>
               <a href="/pages/bbdaf6/" style="color: #F44D2C;">更多信息</a>
             </span>
