@@ -1,33 +1,54 @@
 <template>
   <div>
-    <a-space :size="10">
-      <a href="http://aizuda.com/" target="_blank">
-        <div class="item">
-          <img src="../public/img/aizuda.png" width="150" height="50">
-        </div>
-      </a>
-      <a href="https://easy-security.aizuda.com/" target="_blank">
-        <div class="item">
-          <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50" height="50">
-          <div style="font-weight: bolder;font-size: 20px;color: var(--textColor)!important">Easy-Security</div>
-        </div>
-      </a>
-      <a href="https://flowlong.gitee.io/" target="_blank">
-        <div class="item">
-          <img src="https://flowlong.gitee.io/logo.svg" width="50" height="50">
-          <div style="font-weight: bolder; font-size: 20px; color: var(--textColor)!important">&nbsp;
-            flowlong
+    <n-space :size="10">
+      <n-card>
+        <a href="http://aizuda.com/" target="_blank">
+          <div class="item">
+            <img src="../../src/public/img/aizuda.png" width="150" height="50">
           </div>
-        </div>
-      </a>
-    </a-space>
+        </a>
+      </n-card>
+      <n-card>
+        <a href="https://www.mongoplus.cn/" target="_blank">
+          <div class="item">
+            <img src="../../src/public/img/MongoPlus.png" width="150"  style="height: 50px"/>
+          </div>
+        </a>
+      </n-card>
+      <n-card>
+        <a href="https://doc.flowlong.com/" target="_blank">
+          <div class="item">
+            <img src="../../src/public/img/flowlong.png" width="150"  style="height: 50px"/>
+          </div>
+        </a>
+      </n-card>
+      <n-card>
+        <a href="https://gitee.com/aizuda/zlm4j" target="_blank">
+          <div class="item">
+            <img src="../../src/public/img/zlm4j.jpg" width="150" style="height: 50px"/>
+          </div>
+        </a>
+      </n-card>
+      <n-card>
+        <a href="https://easy-security.aizuda.com/" target="_blank">
+          <div class="item">
+            <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50"  style="height: 50px">
+            <div style="font-weight: bolder;font-size: 16px;color: var(--textColor)!important">EasySecurity</div>
+          </div>
+        </a>
+      </n-card>
+    </n-space>
   </div>
 </template>
 <script>
-export default {
-  name: 'Member',
-
-}
+import { defineComponent } from 'vue'
+import { NSpace, NCard } from 'naive-ui'
+export default defineComponent({
+  components: {
+    NSpace,
+    NCard
+  }
+})
 </script>
 <style>
 .item {

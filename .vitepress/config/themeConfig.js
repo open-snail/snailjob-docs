@@ -16,7 +16,7 @@ const sidebar = [
         text: 'ℹ️介绍',
         collapsed: false,
         items: [
-            {text: '📖系统简介', link: '/docs/introduce/profile'}
+            {text: '📖前言', link: '/docs/introduce/preface'}
         ],
     },
     {
@@ -25,8 +25,9 @@ const sidebar = [
         items: [
             {text: '💡系统概念', link: '/docs/guide/concept'},
             {text: '📌项目特性', link: '/docs/guide/project_features'},
-            {text: '📌重试的那些事', link: '/docs/guide/project_features'},
+            {text: '📌重试的那些事', link: '/docs/guide/retry'},
             { text: '设计原理', link: '/docs/guide/design_principles' },
+            { text: '数据库搭建', link: '/docs/guide/database_build' },
             {text: '🖥️服务部署', link: '/docs/guide/service_deployment'},
             {text: '🌐场景应用', link: '/docs/guide/use_case_scenarios'},
             {text: '👋HelloWorld', link: '/docs/guide/hello_world/'},
@@ -82,11 +83,12 @@ const sidebar = [
         text: '关于项目',
         collapsed: false,
         items: [
-            {text: '更新记录', link: '/docs/operation/deploy'},
-            {text: '参与开发', link: '/docs/operation/launch'}
+            {text: '更新记录', link: '/docs/about/update_log'},
+            {text: '参与开发', link: '/docs/about/join_us'}
         ],
     },
-    { text: '🏆 优秀文章', link: '/pages/db78e2/' },
+    { text: '🏆 优秀文章', link: '/docs/excellent_article' },
+    { text: '🏆 成员', link: '/docs/member' },
     {
         text: '其他站点',
         collapsed: false,
