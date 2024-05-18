@@ -1,5 +1,11 @@
 # 前言
 
+<script setup>
+import Image from '../../../.vitepress/components/Image.vue';
+import CodeHosting from '../../../.vitepress/components/CodeHosting.vue';
+</script>
+
+
 ## 系统简介
 <br/>
 <img src="/logo.svg" alt="snailjob" width="120px">
@@ -9,16 +15,14 @@
 > ✅️ 可重放，可管控、为提高分布式业务系统一致性的分布式任务重试平台 <br/>
 > ✅️ 支持秒级、可中断、可编排的高性能分布式任务调度平台
 
-> SnailJob 是一个功能强大的分布式重试和任务调度平台，为支持提高分布式业务系统一致性和分布式任务调度而设计。具备高度可伸缩性和容错性，还包含完善的权限管理和强大的告警监控功能。
->一次部署即可获得重试和任务调度功能，为开发人员提供了简单而高效的解决方案。
+> SnailJob 是一个灵活、可靠且高效的分布式任务重试和任务调度平台。其核心采用分区模式实现，具备高度可伸缩性和容错性的分布式系统。拥有完善的权限管理、强大的告警监控功能和友好的界面交互。欢迎大家接入并使用。
 
-
-* 开源地址：[Gitee](https://gitee.com/aizuda/snail-job)  |  [Github](https://github.com/aizuda/snail-job)
+<CodeHosting />
 
 * ⭕Aizuda/SnailJob 采用APACHE LICENSE 2.0 开源协议，您在使用过程中，需要注意以下几点:
 
-> ⛔不得修改产品相关代码的源码头注释和出处;
-> ⛔不得进行简单修改包装声称是自己的产品;
+> ⛔不得修改产品相关代码的源码头注释和出处; <br/>
+> ⛔不得进行简单修改包装声称是自己的产品;<br/>
 > ⛔ 不得应用于危害国家安全、荣誉和利益的行为，不能以任何形式用于非法目的;
 
 <br />
@@ -32,6 +36,10 @@
 <span style="font-weight: bold; color: #1366ff">分布式任务调度模块</span> <br />
 
 > 是高性能的任务调度框架，无需依赖外部中间件即可实现秒级任务间隔调度。支持多种执行模式，如集群模式、广播模式和分片模式，同时提供多种阻塞策略，如丢弃、覆盖和并行，以提高任务执行效率。平台还提供监控和日志功能，帮助开发人员实时监控任务执行状态。
+
+## 核心能力
+
+<Image />
 
 ## 开源组件对比
 | **项目** | **Quartz**        | **Elastic-Job**          | **XXL-JOB**                   | **Snail Job**                                                                                |
