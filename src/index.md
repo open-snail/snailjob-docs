@@ -31,7 +31,7 @@ features:
     details: 提供丰富的仪表盘,可对各种维度数据进行统计汇总,可便分析总结
   - icon: 🌺
     title: 支持多样化的告警方式
-    details: 邮箱、企业微信、钉钉、飞书
+    details: 邮箱、企业微信、钉钉、飞书、Webhook
 ---
 
 ## <EasyRetryIcon iconType='icon-gengxintexing' /> 特性
@@ -47,8 +47,5 @@ features:
 - **高性能调度平台** 支持服务端节点动态扩容和缩容
 - **支持多样化的告警方式** 邮箱、企业微信、钉钉、飞书
 
-<Notice />
 <br/>
 <br/>
-
-## <EasyRetryIcon iconType='icon-jiagoutu' /> 设计思想

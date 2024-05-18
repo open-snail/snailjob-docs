@@ -23,13 +23,14 @@ const sidebar = [
         text: '📘入门指南',
         collapsed: false,
         items: [
-            {text: '💡系统概念', link: '/pages/v3.x/97cde9/'},
-            {text: '📌项目特性', link: '/pages/v3.x/540553/'},
-            { text: '设计原理', link: '/pages/v3.x/540554/' },
-            {text: '🖥️服务部署', link: '/pages/v3.x/406a66/'},
-            {text: '🌐场景应用', link: '/pages/v3.x/406a68/'},
-            {text: '👋HelloWorld', link: '/pages/v3.x/da9ecc/'},
-            {text: '🧪测试案例', link: '/pages/v3.x/991407/'},
+            {text: '💡系统概念', link: '/docs/guide/concept'},
+            {text: '📌项目特性', link: '/docs/guide/project_features'},
+            {text: '📌重试的那些事', link: '/docs/guide/project_features'},
+            { text: '设计原理', link: '/docs/guide/design_principles' },
+            {text: '🖥️服务部署', link: '/docs/guide/service_deployment'},
+            {text: '🌐场景应用', link: '/docs/guide/use_case_scenarios'},
+            {text: '👋HelloWorld', link: '/docs/guide/hello_world/'},
+            {text: '🧪测试案例', link: '/docs/guide/test_cases'},
             {text: '📊性能指标', link: '/pages/v3.x/991410/'}
         ],
     },
@@ -143,7 +144,7 @@ module.exports = {
     socialLinks,
     sidebar,
     footer: { // 页脚信息
-        createYear: 2022, // 博客创建年份
+        createYear: 2024, // 博客创建年份
         copyright: [
             '<a href="http://aizuda.com/" target="_blank" style="font-weight:bold">Team Aizudai</a>',
             ' | ',
