@@ -28,7 +28,7 @@ const sidebar = [
             {text: '🔄重试的那些事', link: '/docs/guide/retry'},
             {text: '📝设计原理', link: '/docs/guide/design_principles'},
             {
-                text: '注解大全',
+                text: '📚注解大全',
                 collapsed: false,
                 items: [
                     {text: '🔄Retryable注解', link: '/docs/guide/annotation/Retryable'},
