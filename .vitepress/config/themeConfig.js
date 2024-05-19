@@ -25,11 +25,21 @@ const sidebar = [
         items: [
             {text: '💡系统概念', link: '/docs/guide/concept'},
             {text: '📌项目特性', link: '/docs/guide/project_features'},
-            {text: '📌重试的那些事', link: '/docs/guide/retry'},
-            { text: '设计原理', link: '/docs/guide/design_principles' },
-            { text: '数据库搭建', link: '/docs/guide/database_build' },
-            { text: '客户端配置', link: '/docs/guide/client_config' },
-            { text: '服务端配置', link: '/docs/guide/server_config' },
+            {text: '重试的那些事', link: '/docs/guide/retry'},
+            {text: '设计原理', link: '/docs/guide/design_principles'},
+            {
+                text: '注解大全',
+                collapsed: false,
+                items: [
+                    {text: 'Retryable注解', link: '/docs/guide/annotation/Retryable'},
+                    {text: 'ExecutorMethodRegister注解', link: '/docs/guide/annotation/ExecutorMethodRegister'},
+                    {text: 'JobExecutor注解', link: '/docs/guide/annotation/JobExecutor'}
+                ]
+            },
+            {text: 'Spi扩展点', link: '/docs/guide/Spi'},
+            {text: '数据库搭建', link: '/docs/guide/database_build'},
+            {text: '客户端配置', link: '/docs/guide/client_config'},
+            {text: '服务端配置', link: '/docs/guide/server_config'},
             {text: '🖥️服务部署', link: '/docs/guide/service_deployment'},
             {text: '🌐场景应用', link: '/docs/guide/use_case_scenarios'},
             {text: '👋HelloWorld', link: '/docs/guide/hello_world/'},
@@ -42,7 +52,7 @@ const sidebar = [
         collapsed: false,
         items: [
             {
-                text: '⏱️一分钟上手'
+                text: '⏱️一分钟上手', link: '/docs/comingSoon'
             },
             {text: '🛠️组配置详解', link: '/docs/comingSoon'},
             {
@@ -89,8 +99,8 @@ const sidebar = [
             {text: '参与开发', link: '/docs/about/join_us'}
         ],
     },
-    { text: '🏆 优秀文章', link: '/docs/excellent_article' },
-    { text: '🏆 成员', link: '/docs/member' },
+    {text: '🏆 优秀文章', link: '/docs/excellent_article'},
+    {text: '🏆 成员', link: '/docs/member'},
     {
         text: '其他站点',
         collapsed: false,
