@@ -9,11 +9,9 @@
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <img src="/img/qrcode/wx.jpg" class="no-zoom" style="width:120px;margin: 10px;">
         <p>SnailJob微信群(添加我微信备注"进群")</p>
       </td>
       <td align="center" valign="middle">
-        <img src="/img/qrcode/qq.png" alt="群号: 678571433" class="no-zoom" style="width:120px;margin: 10px;">
         <p>SnailJob QQ群: 678571433</p>
       </td>
     </tr>

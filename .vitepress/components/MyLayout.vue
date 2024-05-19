@@ -22,7 +22,7 @@ const {Layout} = DefaultTheme
       <div>
         <div class="sponsor">
           <a href="http://boot.aizuda.com/?from=azd" target="_blank">
-            <img src="https://baomidou.com/img/azd01.png"/>
+<!--            <img src="https://baomidou.com/img/azd01.png"/>-->
           </a>
         </div>
         <div style="color: gray;order: 9999;font-size: smaller;margin: 6px">

@@ -11,12 +11,15 @@ devDependencies:
   naive-ui:
     specifier: ^2.38.2
     version: 2.38.2(vue@3.4.27)
+  typescript:
+    specifier: 5.4.5
+    version: 5.4.5
   vitepress:
     specifier: ^1.2.0
-    version: 1.2.0(@algolia/client-search@4.23.3)(search-insights@2.13.0)
+    version: 1.2.0(@algolia/client-search@4.23.3)(search-insights@2.13.0)(typescript@5.4.5)
   vue:
     specifier: ^3.4.27
-    version: 3.4.27
+    version: 3.4.27(typescript@5.4.5)
 
 packages:
 
@@ -217,7 +220,7 @@ packages:
     peerDependencies:
       vue: ^3.0.11
     dependencies:
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /@docsearch/css@3.6.0:
@@ -674,7 +677,7 @@ packages:
       vue: ^3.2.25
     dependencies:
       vite: 5.2.11
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /@vue/compiler-core@3.4.27:
@@ -733,7 +736,7 @@ packages:
       mitt: 3.0.1
       perfect-debounce: 1.0.0
       speakingurl: 14.0.1
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /@vue/devtools-shared@7.2.0:
@@ -770,7 +773,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.4.27
       '@vue/shared': 3.4.27
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /@vue/shared@3.4.27:
@@ -1022,7 +1025,7 @@ packages:
       treemate: 0.3.11
       vdirs: 0.1.8(vue@3.4.27)
       vooks: 0.2.12(vue@3.4.27)
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
       vueuc: 0.4.58(vue@3.4.27)
     dev: true
 
@@ -1124,13 +1127,19 @@ packages:
     resolution: {integrity: sha512-M8RGFoKtZ8dF+iwJfAJTOH/SM4KluKOKRJpjCMhI8bG3qB74zrFoArKZ62ll0Fr3mqkMJiQOmWYkdYgDeITYQg==}
     dev: true
 
+  /typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
   /vdirs@0.1.8(vue@3.4.27):
     resolution: {integrity: sha512-H9V1zGRLQZg9b+GdMk8MXDN2Lva0zx72MPahDKc30v+DtwKjfyOSXWRIX4t2mhDubM1H09gPhWeth/BJWPHGUw==}
     peerDependencies:
       vue: ^3.0.11
     dependencies:
       evtd: 0.2.4
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /vite@5.2.11:
@@ -1168,7 +1177,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.2.0(@algolia/client-search@4.23.3)(search-insights@2.13.0):
+  /vitepress@1.2.0(@algolia/client-search@4.23.3)(search-insights@2.13.0)(typescript@5.4.5):
     resolution: {integrity: sha512-m/4PAQVyPBvKHV7sFKwcmNmrsoSxdjnw/Eg40YyuBSaBHhrro9ubnfWk5GT0xGfE98LqjZkHCWKNJlR6G/7Ayg==}
     hasBin: true
     peerDependencies:
@@ -1195,7 +1204,7 @@ packages:
       minisearch: 6.3.0
       shiki: 1.5.2
       vite: 5.2.11
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'
@@ -1230,7 +1239,7 @@ packages:
       vue: ^3.0.0
     dependencies:
       evtd: 0.2.4
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
   /vue-demi@0.14.7(vue@3.4.27):
@@ -1245,10 +1254,10 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
 
-  /vue@3.4.27:
+  /vue@3.4.27(typescript@5.4.5):
     resolution: {integrity: sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==}
     peerDependencies:
       typescript: '*'
@@ -1261,6 +1270,7 @@ packages:
       '@vue/runtime-dom': 3.4.27
       '@vue/server-renderer': 3.4.27(vue@3.4.27)
       '@vue/shared': 3.4.27
+      typescript: 5.4.5
     dev: true
 
   /vueuc@0.4.58(vue@3.4.27):
@@ -1275,5 +1285,5 @@ packages:
       seemly: 0.3.8
       vdirs: 0.1.8(vue@3.4.27)
       vooks: 0.2.12(vue@3.4.27)
-      vue: 3.4.27
+      vue: 3.4.27(typescript@5.4.5)
     dev: true
