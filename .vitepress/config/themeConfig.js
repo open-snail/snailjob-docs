@@ -28,11 +28,13 @@ const sidebar = [
             {text: '📌重试的那些事', link: '/docs/guide/retry'},
             { text: '设计原理', link: '/docs/guide/design_principles' },
             { text: '数据库搭建', link: '/docs/guide/database_build' },
+            { text: '客户端配置', link: '/docs/guide/client_config' },
+            { text: '服务端配置', link: '/docs/guide/server_config' },
             {text: '🖥️服务部署', link: '/docs/guide/service_deployment'},
             {text: '🌐场景应用', link: '/docs/guide/use_case_scenarios'},
             {text: '👋HelloWorld', link: '/docs/guide/hello_world/'},
             {text: '🧪测试案例', link: '/docs/guide/test_cases'},
-            {text: '📊性能指标', link: '/pages/v3.x/991410/'}
+            {text: '📊性能指标', link: '/docs/guide/performance_metrics'}
         ],
     },
     {

@@ -19,29 +19,124 @@
 ## 二、获取代码
 
 通过 Git 从版本控制系统中获取最新的项目代码。
-
-```bash
-git clone https://github.com/your-repository/project.git
+::: code-group
+```bash [Gitee]
+git clone https://gitee.com/aizuda/snail-job.git
 cd project
 ```
-
+```bash [Github]
+git clone https://github.com/aizuda/snail-job.git
+cd project
+```
+:::
 ## 三、配置环境
+#### 数据源配置
+::: code-group
+
+```yaml [mysql 数据源]
+# 配置数据源
+spring:
+  datasource:
+    name: snail_job
+    url:  jdbc:mysql://localhost:3306/snail_job?useSSL=false&characterEncoding=utf8&useUnicode=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    ....其他配置信息....
+```
+
+```yaml [mariadb 数据源]
+# 配置数据源
+spring:
+  datasource:
+    name: snail_job
+    url: jdbc:mariadb://localhost:3308/snail_job
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  # ....其他配置信息....
+```
+
+```yaml [postgres 数据源]
+# 配置数据源
+spring:
+  datasource:
+    name: snail_job
+    url: jdbc:postgresql://localhost:5432/snail_job
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+   #....其他配置信息....
+```
+
+```yaml [sqlserver 数据源]
+# 配置数据源
+spring:
+  datasource:
+    name: snail_job
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=snail_job;SelectMethod=cursor;encrypt=false;rewriteBatchedStatements=true
+    username: SA
+    password: EasyRetry@24
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   #....其他配置信息....
+```
+
+```yaml [oracle 数据源]
+# 配置数据源
+spring:
+  datasource:
+    name: snail_job
+    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
+    username: snail_job
+    password: EasyRetry
+    driver-class-name: oracle.jdbc.OracleDriver
+   #....其他配置信息....
+```
+:::
+
+#### 系统参数配置
 根据项目需求配置环境变量和其他必要的设置。
+详情配置 see: [服务端配置](/docs/guide/server_config)
 
-环境变量
-在项目根目录下创建 .env 文件，并根据实际情况填写：
+## 四、数据库构建
+see: [数据库自动化构建](/docs/guide/database_build)
+
+## 五、启动服务
+### 源码部署
+- maven 打包镜像
 ```bash
-DATABASE_URL=postgres://user:password@localhost:5432/dbname
-SECRET_KEY=your_secret_key
-DEBUG=True
+maven clean install
+```
+- 启动
+```
+java -jar snail-job-server.jar
 ```
 
-## 四、启动服务
-启动 Docker 容器
-```bash
-docker run -d -p 8000:8000 --env-file .env project-name
+### Docker容器部署
+::: warning 🌈特别说明
+如需自定义 mysql 等配置，可通过 "-e PARAMS" 指定，参数格式 PARAMS="--key1=value1  --key2=value2" ；
+配置项参考文件：/snail-job-server/src/main/resources/application.yml
+如需自定义 JVM内存参数 等配置，可通过 "-e JAVA_OPTS" 指定，参数格式 JAVA_OPTS="-Xmx512m" ；
+:::
 
+::: code-group
+
+```shell [mysql 数据源]
+docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mysql://IP:3306/snail_job?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai --spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mysql -d byteblogs/snail-job:{Latest Version}
 ```
+```shell [mariadb 数据源]
+docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mariadb://IP:3307/snail_job --spring.datasource.driver-class-name=org.mariadb.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mariadb -d byteblogs/snail-job:{Latest Version}
+```
+```shell [postgres 数据源]
+docker run  -e PARAMS="--spring.datasource.username=postgres --spring.datasource.password=root  --spring.datasource.url=jdbc:postgresql://IP:5432/snail_job --spring.datasource.driver-class-name= org.postgresql.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-postgres -d byteblogs/snail-job:{Latest Version}
+```
+```shell [sqlserver 数据源]
+docker run  -e PARAMS="--spring.datasource.username=SA --spring.datasource.password=SnailJob@24  --spring.datasource.url=jdbc:sqlserver://IP:1433;DatabaseName=snail_job;SelectMethod=cursor;encrypt=false;rewriteBatchedStatements=true --spring.datasource.driver-class-name= com.microsoft.sqlserver.jdbc.SQLServerDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-sqlserver -d byteblogs/snail-job:{Latest Version}
+```
+```shell [oracle 数据源]
+docker run  -e PARAMS="--spring.datasource.username=snail_job --spring.datasource.password=SnailJob  --spring.datasource.url=jdbc:oracle:thin:@//IP:1521/XEPDB1 --spring.datasource.driver-class-name=oracle.jdbc.OracleDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-oracle -d byteblogs/snail-job:{Latest Version}
+```
+:::
 
 ## 五、验证部署
 确保服务正常运行，进行基本的功能测试。
@@ -50,7 +145,9 @@ docker run -d -p 8000:8000 --env-file .env project-name
 使用 curl 或 Postman 进行 API 测试，确保服务响应正确。
 
 ```bash
-curl http://localhost:8000/api/health
+http://localhost:8000/snail-job
+用户名: admin
+密码: admin
 ```
 
 问题一：无法连接数据库
