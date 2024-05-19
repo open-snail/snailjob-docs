@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 // import DefaultTheme from 'vitepress/theme'
 // import MyLayout from '../components/MyLayout.vue'
-// import './style.css'
+
 //
 // /** @type {import('vitepress').Theme} */
 // export default {
@@ -15,6 +15,7 @@ import DefaultTheme from 'vitepress/theme'
 import { NConfigProvider } from 'naive-ui'
 import { setup } from '@css-render/vue3-ssr'
 import { useRoute } from 'vitepress'
+import './style.css'
 
 const { Layout } = DefaultTheme
 
