@@ -24,7 +24,8 @@ export default {
 
 }
 </script>
-<style>
+
+<style scoped>
 .item {
   display: flex;
   flex-direction: row;

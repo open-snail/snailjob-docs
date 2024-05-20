@@ -50,7 +50,8 @@ export default defineComponent({
   }
 })
 </script>
-<style>
+
+<style scoped>
 .item {
   display: flex;
   flex-direction: row;
