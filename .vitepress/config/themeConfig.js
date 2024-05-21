@@ -60,19 +60,27 @@ const sidebar = [
                 collapsed: true,
                 items: [
                     {text: '👁️功能演示', link: '/docs/comingSoon'},
+                    {text: '🔠JobExecutor注解', link: '/docs/comingSoon'},
                     {text: '🔠执行器名称', link: '/docs/comingSoon'},
                     {text: '📝任务类型&方法参数', link: '/docs/comingSoon'},
                     {text: '🔀路由策略&阻塞策略', link: '/docs/comingSoon'},
                     {text: '⏳触发类型&间隔时长', link: '/docs/comingSoon'},
                     {text: '⏰超时时间&并行数', link: '/docs/comingSoon'},
                     {text: '❌失败重试配置', link: '/docs/comingSoon'},
+                    {text: '表结构设计讲解', link: '/docs/comingSoon'},
                 ]
             },
             {
                 text: '工作流详解',
                 collapsed: true,
                 items: [
-                    {text: '👁️功能演示', link: '/docs/comingSoon'}
+                    {text: '功能演示', link: '/docs/comingSoon'},
+                    {text: '任务节点&失败策略', link: '/docs/comingSoon'},
+                    {text: '判定节点&判定逻辑', link: '/docs/comingSoon'},
+                    {text: '判定节点&表达式类型', link: '/docs/comingSoon'},
+                    {text: '回调通知', link: '/docs/comingSoon'},
+                    {text: '复杂场景下的工作流编排', link: '/docs/comingSoon'},
+                    {text: '表结构设计讲解', link: '/docs/comingSoon'}
                 ]
             },
             {
@@ -80,13 +88,55 @@ const sidebar = [
                 collapsed: true,
                 items: [
                     {text: '👁️功能演示', link: '/docs/comingSoon'},
+                    {text: '👁️重试那些事', link: '/docs/comingSoon'},
+                    {
+                        text: '👁️ 场景配置',
+                        collapsed: true,
+                        items: [
+                            {text: '路由策略&超时时间&最大重试次数', link: '/docs/comingSoon'},
+                            {text: '调用链超时时间', link: '/docs/comingSoon'},
+                            {text: '退避策略&间隔时间', link: '/docs/comingSoon'},
+                        ]
+                    },
+                    {text: '👁️ 何为死信任务?', link: '/docs/comingSoon'},
+                    {text: '👁️ 回调任务到底是干啥的?', link: '/docs/comingSoon'},
+                    {
+                        text: '👁️ Retryable注解',
+                        collapsed: true,
+                        items: [
+                            {text: 'scene', link: '/docs/comingSoon'},
+                            {text: 'include&exclude', link: '/docs/comingSoon'},
+                            {text: 'retryStrategy', link: '/docs/comingSoon'},
+                            {text: 'retryMethod', link: '/docs/comingSoon'},
+                            {text: 'idempotentId', link: '/docs/comingSoon'},
+                            {text: 'retryCompleteCallback', link: '/docs/comingSoon'},
+                            {text: 'isThrowException', link: '/docs/comingSoon'},
+                            {text: 'bizNo', link: '/docs/comingSoon'},
+                            {text: 'localTimes&localInterval', link: '/docs/comingSoon'},
+                            {text: 'async&timeout&unit&forceReport', link: '/docs/comingSoon'},
+                            {text: 'propagation', link: '/docs/comingSoon'},
+                        ]
+                    },
+                    {text: '👁️手动添加任务', link: '/docs/comingSoon'},
+                    {text: '👁️批量添加任务', link: '/docs/comingSoon'},
+                    {text: '表结构设计讲解', link: '/docs/comingSoon'}
                 ]
             },
             {
                 text: '通知配置详解',
                 collapsed: true,
                 items: [
-                    {text: '👁️功能演示', link: '/docs/comingSoon'}
+                    {text: '👁️功能演示', link: '/docs/comingSoon'},
+                    {text: '👁️通知人配置', link: '/docs/comingSoon'},
+                    {
+                        text: '👁️ 通知场景配置',
+                        collapsed: true,
+                        items: [
+                            {text: '重试场景', link: '/docs/comingSoon'},
+                            {text: '定时任务场景', link: '/docs/comingSoon'},
+                            {text: '工作流场景', link: '/docs/comingSoon'},
+                        ]
+                    }
                 ]
             },
         ],

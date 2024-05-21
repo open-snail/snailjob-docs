@@ -1,15 +1,3 @@
-// https://vitepress.dev/guide/custom-theme
-// import DefaultTheme from 'vitepress/theme'
-// import MyLayout from '../components/MyLayout.vue'
-
-//
-// /** @type {import('vitepress').Theme} */
-// export default {
-//   ...DefaultTheme,
-//   Layout: MyLayout
-// }
-// .vitepress/theme/index.js
-
 import { defineComponent, h, inject } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import { NConfigProvider } from 'naive-ui'

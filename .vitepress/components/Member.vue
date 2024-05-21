@@ -1,35 +1,38 @@
 <template>
   <div>
     <n-space :size="10">
-      <n-card>
+      <n-card hoverable>
         <a href="http://aizuda.com/" target="_blank">
           <div class="item">
-            <img src="../../src/public/img/aizuda.png" width="150" height="50">
+            <img src="../../src/public/img/icon/aizuda.png" width="50" style="height: 50px">
+            <div style="font-weight: bolder;font-size: 16px;color: var(--textColor)!important">
+              Aizuda
+            </div>
           </div>
         </a>
       </n-card>
-      <n-card>
+      <n-card hoverable>
         <a href="https://www.mongoplus.cn/" target="_blank">
           <div class="item">
             <img src="../../src/public/img/MongoPlus.png" width="150"  style="height: 50px"/>
           </div>
         </a>
       </n-card>
-      <n-card>
+      <n-card hoverable>
         <a href="https://doc.flowlong.com/" target="_blank">
           <div class="item">
             <img src="../../src/public/img/flowlong.png" width="150"  style="height: 50px"/>
           </div>
         </a>
       </n-card>
-      <n-card>
+      <n-card hoverable>
         <a href="https://gitee.com/aizuda/zlm4j" target="_blank">
           <div class="item">
             <img src="../../src/public/img/zlm4j.jpg" width="150" style="height: 50px"/>
           </div>
         </a>
       </n-card>
-      <n-card>
+      <n-card hoverable>
         <a href="https://easy-security.aizuda.com/" target="_blank">
           <div class="item">
             <img src="https://easy-security.aizuda.com/assets/img/logo.png" width="50"  style="height: 50px">
