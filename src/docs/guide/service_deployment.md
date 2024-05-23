@@ -119,22 +119,24 @@ java -jar snail-job-server.jar
 如需自定义 JVM内存参数 等配置，可通过 "-e JAVA_OPTS" 指定，参数格式 JAVA_OPTS="-Xmx512m" ；
 :::
 
+正式发布版 点击查看[最新版本号](https://hub.docker.com/repositories/opensnail)
+
 ::: code-group
 
 ```shell [mysql 数据源]
-docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mysql://IP:3306/snail_job?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai --spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mysql -d byteblogs/snail-job:{Latest Version}
+docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mysql://IP:3306/snail_job?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai --spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mysql -d opensnail/snail-job:{Latest Version}
 ```
 ```shell [mariadb 数据源]
-docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mariadb://IP:3307/snail_job --spring.datasource.driver-class-name=org.mariadb.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mariadb -d byteblogs/snail-job:{Latest Version}
+docker run  -e PARAMS="--spring.datasource.username=root --spring.datasource.password=root  --spring.datasource.url=jdbc:mariadb://IP:3307/snail_job --spring.datasource.driver-class-name=org.mariadb.jdbc.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-mariadb -d opensnail/snail-job:{Latest Version}
 ```
 ```shell [postgres 数据源]
-docker run  -e PARAMS="--spring.datasource.username=postgres --spring.datasource.password=root  --spring.datasource.url=jdbc:postgresql://IP:5432/snail_job --spring.datasource.driver-class-name= org.postgresql.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-postgres -d byteblogs/snail-job:{Latest Version}
+docker run  -e PARAMS="--spring.datasource.username=postgres --spring.datasource.password=root  --spring.datasource.url=jdbc:postgresql://IP:5432/snail_job --spring.datasource.driver-class-name= org.postgresql.Driver" -p 8080:8080 -p 1788:1788 --name snail-job-server-postgres -d opensnail/snail-job:{Latest Version}
 ```
 ```shell [sqlserver 数据源]
-docker run  -e PARAMS="--spring.datasource.username=SA --spring.datasource.password=SnailJob@24  --spring.datasource.url=jdbc:sqlserver://IP:1433;DatabaseName=snail_job;SelectMethod=cursor;encrypt=false;rewriteBatchedStatements=true --spring.datasource.driver-class-name= com.microsoft.sqlserver.jdbc.SQLServerDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-sqlserver -d byteblogs/snail-job:{Latest Version}
+docker run  -e PARAMS="--spring.datasource.username=SA --spring.datasource.password=SnailJob@24  --spring.datasource.url=jdbc:sqlserver://IP:1433;DatabaseName=snail_job;SelectMethod=cursor;encrypt=false;rewriteBatchedStatements=true --spring.datasource.driver-class-name= com.microsoft.sqlserver.jdbc.SQLServerDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-sqlserver -d opensnail/snail-job:{Latest Version}
 ```
 ```shell [oracle 数据源]
-docker run  -e PARAMS="--spring.datasource.username=snail_job --spring.datasource.password=SnailJob  --spring.datasource.url=jdbc:oracle:thin:@//IP:1521/XEPDB1 --spring.datasource.driver-class-name=oracle.jdbc.OracleDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-oracle -d byteblogs/snail-job:{Latest Version}
+docker run  -e PARAMS="--spring.datasource.username=snail_job --spring.datasource.password=SnailJob  --spring.datasource.url=jdbc:oracle:thin:@//IP:1521/XEPDB1 --spring.datasource.driver-class-name=oracle.jdbc.OracleDriver" -p 8080:8080 -p 1788:1788 --name snail-job-server-oracle -d opensnail/snail-job:{Latest Version}
 ```
 :::
 
