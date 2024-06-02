@@ -1,6 +1,4 @@
 import { defineConfig } from 'vitepress'
-const head = require('./config/head.js');
-const nav = require('./config/nav.js');
 const themeConfig = require('./config/themeConfig.js');
 const fileAndStyles: Record<string, string> = {}
 

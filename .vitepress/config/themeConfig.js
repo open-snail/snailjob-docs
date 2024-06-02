@@ -48,7 +48,7 @@ const sidebar = [
         ],
     },
     {
-        text: '🎓实操课程',
+        text: '🎓实操课程(视频教程)',
         collapsed: false,
         items: [
             {
