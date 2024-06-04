@@ -3,7 +3,7 @@ module.exports = [
     {
         text: '📚文档', link: '/docs/introduce/preface',
     },
-    {text: '🎓实操课程', link: '/docs/comingSoon'},
+    // {text: '🎓实操课程', link: '/docs/comingSoon'},
     {
         text: '❓Q&A', items: [
             {text: '常见问题', link: '/docs/QA'},
