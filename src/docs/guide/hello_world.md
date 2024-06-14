@@ -36,12 +36,12 @@
 
 ```java
 @SpringBootApplication
-    @EnableEasyRetry(group = "snail_job_demo_group")
-    public class SnailJobSpringbootApplication {
-        public static void main(String[] args) {
-            SpringApplication.run(EasyRetrySpringbootApplication.class, args);
-        }
+@EnableEasyRetry(group = "snail_job_demo_group")
+public class SnailJobSpringbootApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EasyRetrySpringbootApplication.class, args);
     }
+}
 ```
 
 这个启动类中写入的snail_job_demo_group对应的是我们控制台中的组名称
@@ -81,21 +81,45 @@ public void localRemoteTest(){
 <img src="/img/SnailJob启动案例.png" class="no-zoom" style="zoom: 100%;">
 
 ## 定时任务案例演示
+### 注解方式
 #### 配置定时任务`testJobExecutor`
 
-<img src="/img/定时任务配置.png" class="no-zoom" style="zoom: 100%;">
+<img src="/img/定时任务配置-注解.png" class="no-zoom" style="zoom: 100%;">
 
 #### 编写执行器
+
 ```java
 @Component
 @JobExecutor(name = "testJobExecutor")
 public class TestAnnoJobExecutor {
 
     public ExecuteResult jobExecute(JobArgs jobArgs) {
-        return ExecuteResult.success("测试成功");
+        return ExecuteResult.success("注解方式-测试成功");
     }
 }
 ```
 
 #### 执行结果演示
 <img src="/img/执行结果.png" class="no-zoom" style="zoom: 100%;">
+
+
+### 继承类 AbstractJobExecutor
+#### 配置定时任务`testClassJobExecutor`
+
+<img src="/img/定时任务配置-继承类.png" class="no-zoom" style="zoom: 100%;">
+
+#### 编写执行器
+
+```java
+@Component
+public class TestClassJobExecutor extends AbstractJobExecutor {
+
+    @Override
+    protected ExecuteResult doJobExecute(JobArgs jobArgs) {
+        return ExecuteResult.success("继承AbstractJobExecutor-测试成功");
+    }
+}
+```
+
+#### 执行结果演示
+<img src="/img/执行结果-继承类.png" class="no-zoom" style="zoom: 100%;">
