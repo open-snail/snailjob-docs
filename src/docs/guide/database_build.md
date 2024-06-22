@@ -43,6 +43,17 @@ docker compose up -d sqlserver
 docker compose exec sqlserver bash /tmp/create_schema.sh
 ```
 
+```shell [达梦]
+## 下载达梦安装包
+wget https://download.dameng.com/eco/dm8/dm8_20240613_x86_rh6_64_rq_ent_8.1.3.140_pack5.tar
+## 加载达梦镜像
+docker load -i dm8_20240613_x86_rh6_64_rq_ent_8.1.3.140_pack5.tar
+## 启动
+docker compose up -d dm8
+## 执行数据库脚本
+docker compose exec dm8 bash -c 'exec /opt/dmdbms/bin/disql SYSDBA/SYSDBA001 \`/tmp/schema.sql'
+```
+
 :::
 
 ### 数据库默认连接信息
