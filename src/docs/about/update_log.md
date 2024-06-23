@@ -2,6 +2,9 @@
 
 # v 1.1.0-beta1
 ::: tip 更新日志
+<br/>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112666253199961&bvid=BV11W3ge4Et9&cid=500001593665638&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 1. 【信创】支持达梦数据库【新增】
 2. 更新密码策略：字母、数字、特殊字符，任意2种组成，6-20位【优化】
 3. 工作流批次、重试批次、重试日志添加时间筛选(默认查询一个月)【新增】
@@ -46,6 +49,10 @@
 
 # v 1.0.0 
 ::: tip 更新日志
+<br/>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Fr421w72q&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
 1. 支持组、定时任务、工作流、重试任务、通知人导入和导出【新增】
 2. 工作流从antd迁移到soybeanjs【优化】
 3. 超级管理员不允许删除、修改权限【优化】
