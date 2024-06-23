@@ -19,8 +19,9 @@
 15. 命名空间非活跃条目显示图标【优化】
 16. 登录界面可以做一下键盘回车登录【优化】
 17. updateBatch系列脚本增加update_dt=CURRENT_TIMESTAMP【优化】
-18. 优化其他若干已知问题【优化】
-19. 页面路径修改 notify/scene => notify/config 【优化】
+18. 页面路径修改 notify/scene => notify/config 【优化】
+19. 优化客户端发送消息是组为空的校验【优化】
+20.  优化其他若干已知问题【优化】
 
 **参与者设计开发人员名单**
 1. https://gitee.com/xlsea
