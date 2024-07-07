@@ -10,7 +10,7 @@ hero:
     alt: 灵活，可靠和快速的分布式任务重试和分布式任务调度平台
   actions:
     - theme: brand
-      text: ️v1.1.0-beta1 全新发布 ->
+      text: ️v1.1.0-beta2 全新发布 ->
       link: /docs/introduce/preface
     - theme: alt
       text: 在线体验 ->

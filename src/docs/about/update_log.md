@@ -1,5 +1,59 @@
 # 更新日志
 
+# v 1.1.0-beta2
+::: tip 更新日志
+<br/>
+
+1. 重构钉钉消息发送工具类(优化)
+2. 工作流支持全局上下文传递(新增)
+3. 支持动态分片(Map/MapReuce)(新增)
+4. 修复oracle超过1000批量删除失败问题(BUG)
+5. 定时任务阻塞策略新增恢复类型(新增)
+6. 工作流阻塞策略新增恢复类型(新增)
+7. sj_distributed_lock 分布式锁表去掉自增主键(优化)
+8. 优化决策节点手动校验逻辑并支持手动校验按钮(优化)
+9. 工作流决策节点判定逻辑使用上下文进行判断(优化)
+10. 工作流批次详情新增实时刷新功能(新增)
+11. 工作流和定时任务实时日志新增自动刷新功能(新增)
+12. 修复实时日志展示重复问题(BUG)
+13. 重试次数支持最低为0次(优化)
+14. 登录新增验证码功能(新增)
+15. 重试场景随机和固定间隔重试间隔新增最低10s限制(优化)
+16. 任务项列列表新增任务名称字段(优化)
+17. 升级mybatis-plus版本(3.5.6->3.5.7)(升级)
+18. 修复退出登录和修改密码未重定向到登录页问题(BUG)
+19. 工作流支持页面初始化上下文信息(新增)
+20. 优化其他已知问题
+------------------------------------------------------------------------
+**MYSQL变更(其他DB变更请自行同步)**
+> 全量的SQL请参考项目 /doc/sql/x.sql
+
+```sql
+ALTER TABLE `sj_distributed_lock` DROP INDEX `uk_name`;
+ALTER TABLE `sj_distributed_lock` MODIFY COLUMN `id` bigint UNSIGNED NOT NULL COMMENT '主键';
+ALTER TABLE `sj_distributed_lock` DROP PRIMARY KEY;
+ALTER TABLE `sj_distributed_lock` ADD PRIMARY KEY (`name`) USING BTREE;
+ALTER TABLE `sj_distributed_lock` DROP COLUMN `id`;
+ALTER TABLE `sj_job_task` ADD COLUMN `mr_stage` tinyint NULL DEFAULT NULL COMMENT '动态分片所处阶段 1:map 2:reduce 3:mergeReduce';
+ALTER TABLE `sj_job_task` ADD COLUMN `leaf` tinyint NOT NULL DEFAULT 1 COMMENT '叶子节点' AFTER `mr_stage`;
+ALTER TABLE `sj_job_task` ADD COLUMN `task_name` varchar(255) NOT NULL DEFAULT '' COMMENT '任务名称';
+ALTER TABLE `sj_job_task` ADD COLUMN `wf_context` text  NULL COMMENT '工作流全局上下文' ;
+ALTER TABLE `sj_workflow_task_batch` ADD COLUMN `wf_context` text  NULL COMMENT '全局上下文' ;
+ALTER TABLE `sj_workflow_task_batch` ADD COLUMN `version` int NOT NULL DEFAULT 1 COMMENT;
+```
+------------------------------------------------------------------------
+
+**参与者设计开发人员名单**
+1. https://gitee.com/xlsea
+2. https://gitee.com/xiaowoniu168
+3. https://gitee.com/dhb52
+4. https://gitee.com/zhengweilins
+5. https://gitee.com/srzou
+6. https://gitee.com/jcwang812
+
+:::
+
+
 # v 1.1.0-beta1
 ::: tip 更新日志
 <br/>
