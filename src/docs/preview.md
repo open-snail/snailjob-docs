@@ -1,5 +1,5 @@
 # 在线体验地址
 
-- 地址: [http://preview.easyretry.com](http://preview.easyretry.com)
+- 地址: [https://preview.snailjob.opensnail.com/](https://preview.snailjob.opensnail.com/)
 - 账号: developer
 - 密码: 123456
