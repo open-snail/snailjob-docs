@@ -41,6 +41,7 @@ ALTER TABLE `sj_job_task` ADD COLUMN `task_name` varchar(255) NOT NULL DEFAULT '
 ALTER TABLE `sj_job_task` ADD COLUMN `wf_context` text  NULL COMMENT '工作流全局上下文' ;
 ALTER TABLE `sj_workflow_task_batch` ADD COLUMN `wf_context` text  NULL COMMENT '全局上下文' ;
 ALTER TABLE `sj_workflow_task_batch` ADD COLUMN `version` int NOT NULL DEFAULT 1 COMMENT;
+ALTER TABLE `sj_workflow` ADD COLUMN `wf_context` text  NULL COMMENT '全局上下文' ;
 ```
 ------------------------------------------------------------------------
 
